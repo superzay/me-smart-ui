@@ -1,0 +1,16 @@
+{
+  "id": "2609838",
+  "name": "me-smart-ui-project",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "9615680",
+      "name": "目录",
+      "font_class": "mulu",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    }
+  ]
+}
