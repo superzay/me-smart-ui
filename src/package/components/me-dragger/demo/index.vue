@@ -71,10 +71,10 @@
 
   @media screen and (max-width: 500px) {
     .item {
-      width: 140px!important;
-      height: 45px!important;
-      font-size: 12px!important;
-      border-radius: 10px!important;
+      width: 140px !important;
+      height: 45px !important;
+      font-size: 12px !important;
+      border-radius: 10px !important;
     }
   }
 </style>

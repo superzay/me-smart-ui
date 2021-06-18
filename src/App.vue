@@ -24,7 +24,7 @@
     <!-- 组件展示 -->
     <main>
       <!-- title -->
-      <p class='title'>{{this.active}} 使用demo</p>
+      <p class='title'>{{this.active}} 演示demo</p>
       <component v-if='targetComp' :is='targetComp'></component>
     </main>
   </div>
