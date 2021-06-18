@@ -6,5 +6,3 @@ export default {
     })
   }
 }
-
-export const b = 20
