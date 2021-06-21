@@ -1,5 +1,13 @@
 <template>
   <div class='demo-me-dragger'>
+    <h2 class='title'>me-dragger组件文档及演示demo</h2>
+    <p class='explain'>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一款基于vue的PC端拖拽排序插件。实现对目标的自由拖拽、实时响应排序。
+    </p>
+    <!-- 说明文档 -->
+    <doc></doc>
+
+    <!-- 演示 -->
     <p class='text'>&nbsp;&nbsp; 试一试，PC端拖拽排序插件</p>
     <me-dragger :options.sync='arr' id-field='id' type='left-right'>
       <div v-for='(item,index) in arr' :key='item.id' class='item'>
@@ -9,7 +17,11 @@
   </div>
 </template>
 <script>
+  import doc from './doc.vue'
   export default {
+    components: {
+      doc
+    },
     name: '',
     data() {
       return {
@@ -41,12 +53,24 @@
 </script>
 <style lang="scss" scoped>
   .demo-me-dragger {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: auto;
+    padding-bottom: 200px;
+
+    .title {
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .explain {
+      margin: 10px 0 -10px 0;
+      font-size: 13px;
+      color: #666;
+    }
 
     .text {
       font-weight: bold;
-      margin-bottom: 5px;
+      margin: 20px 0 5px 0;
     }
 
     .item {

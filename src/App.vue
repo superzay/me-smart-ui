@@ -23,8 +23,6 @@
 
     <!-- 组件展示 -->
     <main>
-      <!-- title -->
-      <p class='title'>{{this.active}} 演示demo</p>
       <component v-if='targetComp' :is='targetComp'></component>
     </main>
   </div>
@@ -35,7 +33,7 @@
   export default {
     data() {
       return {
-        active: 'me-dragger',
+        active: 'me-image-crop',
         compMap: new Map(),// 组件map集合
       }
     },
@@ -84,13 +82,7 @@
 </script>
 
 <style scoped lang='scss' scoped>
-  $largeDeviceAsideWidth: 150px;
-  $smallDeviceAsideWidth: 0px;
-  $backgroundAside: #f2f2f2;
-  $borderColor: #f2f2f2;
-  $headerHeight: 50px;
-  $headerHeight-1: 40px;
-  $zIndex: 500;
+  @import 'src/assets/css/var.scss';
 
   .content {
     padding-top: $headerHeight;
@@ -108,7 +100,7 @@
 
       .logo {
         width: 120px;
-        background: #333;
+        background: #40aaa3;
         border-radius: 20px;
         text-align: center;
         padding: 5px 0;
@@ -144,8 +136,8 @@
           position: relative;
 
           &.active {
-            color: red;
-            background: #fff;
+            /* color: $themeColor; */
+            background: #f2f2f2;
           }
 
           .aside-list-item-text {
@@ -157,7 +149,7 @@
     }
 
     main {
-      padding: 10px 10px 10px 30px;
+      padding: 10px 30px 10px 30px;
       margin-left: $largeDeviceAsideWidth;
 
       .title {
@@ -190,6 +182,7 @@
         position: fixed;
         top: $headerHeight-1 + 10px;
         left: 10px;
+        box-shadow: 2px 2px 10px 0px #c2c2c2;
 
         .aside-flag {
           display: block
@@ -202,6 +195,7 @@
           width: 150px;
           background: $backgroundAside;
           border-radius: 3px;
+          box-shadow: 2px 2px 10px 0px #c2c2c2;
 
           &.aside-close {
             display: none
