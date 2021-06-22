@@ -4,11 +4,11 @@
       <p class='logo center-y'>me-smart-ui 库</p>
     </header>
     <!-- 组件列表 -->
-    <aside @click.stop='toggle("aside")'>
+    <aside @touchstart.stop='toggle("aside")'>
       <div class='aside-flag center'>
         <i class='iconfont icon-mulu'></i>
       </div>
-      <div ref='asideList' @click.stop="" class='aside-list'>
+      <div ref='asideList' @touchstart.stop="" class='aside-list'>
         <div v-for='item in getCompnentList()' :key='item' class='aside-list-item' :class='{active:item==active}'
           @click='active = item'>
           <div class='center aside-list-item-text'>
@@ -38,7 +38,7 @@
       }
     },
     created() {
-      window.addEventListener('click', this.toggle)
+      window.addEventListener('touchstart', this.toggle)
     },
     computed: {
       targetComp() {
@@ -76,7 +76,7 @@
       }
     },
     destoryed() {
-      window.removeEventListener('click', this.toggle)
+      window.removeEventListener('touchstart', this.toggle)
     }
   }
 </script>
