@@ -8,7 +8,6 @@
   </div>
 </template>
 <script>
-  import showdown from "showdown"
   import hl from 'highlight.js' // 导入代码高亮文件
   export default {
     props: {
@@ -24,7 +23,6 @@
     },
     computed: {
       codeHtml() {
-        const converter = new showdown.Converter()// 创建实例
         let length
         let text = this.code
 

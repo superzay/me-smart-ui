@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const moduleLoaderPlugin = require('./extra/webpack/plugin/moduleLoaderPlugin');
 const removeDirPlugin = require('./extra/webpack/plugin/removeDirPlugin');
 const addEntryPlugin = require('./extra/webpack/plugin/addEntryPlugin');
@@ -59,6 +60,14 @@ if (['dev', 'build-main', 'dev-test-lib'].includes(process.env.run)) {
     fileName: 'index.html',
     template: './public/index.html'
   }));
+
+  plugins.push(new CompressionWebpackPlugin({
+    algorithm: 'gzip',
+    test: new RegExp('\.'),
+    include: new RegExp('\.'),
+    threshold: 10240,
+    minRatio: 0.8
+  }))
 }
 
 module.exports = {

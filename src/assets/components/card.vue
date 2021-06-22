@@ -7,7 +7,6 @@
   </div>
 </template>
 <script>
-  import showdown from "showdown"
   export default {
     props: ['title'],
   }

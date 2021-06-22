@@ -100,7 +100,8 @@
 
       .logo {
         width: 120px;
-        background: #40aaa3;
+        background: $themeColor;
+        /* background: #40aaa3; */
         border-radius: 20px;
         text-align: center;
         padding: 5px 0;
