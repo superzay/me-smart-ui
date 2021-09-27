@@ -70,6 +70,26 @@ if (['dev', 'build-main', 'dev-test-lib'].includes(process.env.run)) {
   }))
 }
 
+// 样式自动补全
+const autoprefixer = {
+  loader: 'postcss-loader',
+  options: {
+    postcssOptions:{
+      plugins: [require('autoprefixer')({
+        browsers: [ //浏览器列表
+          'ie>=10',
+          'Firefox>=20',
+          'Safari>=5',
+          'Android>=4',
+          'Ios>=6',
+          'last 4 version',
+        ]
+      })]
+    }
+    
+  }
+}
+
 module.exports = {
   entry: getEntry(),
   output: getOutput(),
@@ -99,8 +119,8 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            css: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader'],
-            scss: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', 'sass-loader'],
+            css: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader',autoprefixer],
+            scss: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', autoprefixer, 'sass-loader'],
             js: 'babel-loader'
           }
         }
@@ -111,10 +131,10 @@ module.exports = {
       exclude: /node_modules|\\lib/
     }, {
       test: /\.css$/,
-      use: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader']
+      use: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', autoprefixer]
     }, {
       test: /\.scss$/,
-      use: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', 'sass-loader']
+      use: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', autoprefixer, 'sass-loader']
     }, {
       test: /\.(png|jpg|gif)$/,
       use: [{
