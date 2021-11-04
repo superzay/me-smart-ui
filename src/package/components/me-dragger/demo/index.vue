@@ -1,15 +1,15 @@
 <template>
   <div class='demo-me-dragger'>
-    <h2 class='title'>me-dragger组件文档及演示demo</h2>
+    <h2 class='title'>me-dragger组件文档（文章最后有演示demo）</h2>
     <p class='explain'>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一款基于vue的PC端拖拽排序插件。实现对目标的自由拖拽、实时响应排序。
     </p>
     <!-- 说明文档 -->
     <doc></doc>
 
-    <!-- 演示 -->
+    <!-- 拖拽排序插件，演示demo -->
     <p class='text'>&nbsp;&nbsp; 试一试，PC端拖拽排序插件</p>
-    <me-dragger :options.sync='arr' id-field='id' type='left-right'>
+    <me-dragger :options='arr' id-field='id' @order-change='orderChange' type='left-right'>
       <div v-for='(item,index) in arr' :key='item.id' class='item'>
         <span class="center"><span class='top'> 第 {{index+1}} 名</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{item.id}}</span>
       </div>
@@ -47,6 +47,11 @@
         }, {
           id: '苏小小',
         }],
+      }
+    },
+    methods:{
+      orderChange(newArr){
+        this.arr = newArr
       }
     }
   }

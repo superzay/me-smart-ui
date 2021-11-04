@@ -23,25 +23,40 @@
     },
     data() {
       return {
+        uuid: null,
         position: [],
-        dragId: null, 
-        moving: false, 
-        animateTime: 200, 
+        dragId: null,
+        moving: false,
+        animateTime: 200,
       }
     },
     created() {
-      // 
+      this.uuid = this.generate_uuid()
     },
     computed: {},
     methods: {
+      // 生成实例的uuid，唯一标识实例，（一个页面可能同时渲染多个me-dragger实例）
+      generate_uuid() {
+        return "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+          /[xy]/g,
+          function (c) {
+            var r = (Math.random() * 16) | 0,
+              v = c == "x" ? r : (r & 0x3) | 0x8;
+            return v.toString(16);
+          }
+        );
+      },
       dragstart(event) {
         this.dragId = event.currentTarget.dataset.id
+        window['__ME_DRAGGER_UUID__'] = this.uuid 
       },
       dragend() {
         this.dragId = null
+        window['__ME_DRAGGER_UUID__'] = null
         this.$forceUpdate()
       },
       dragover(event) {
+        if(window['__ME_DRAGGER_UUID__'] !== this.uuid) return
         event.preventDefault();
         let id = event.currentTarget.dataset.id
         if (!this.moving && id !== this.dragId) {
@@ -84,7 +99,7 @@
           this.moving = true
           newArr.splice(dragoverIndex, 0, dragItem)
 
-          this.$emit('update:options', newArr)
+          this.$emit('order-change', newArr)
           this.$nextTick(() => {
             let elArr = Array.from(this.$refs.root.querySelectorAll('.me-dragger>*'))
             elArr.forEach(item => {
@@ -110,7 +125,7 @@
               elArr.forEach(item => {
                 if (item.dataset.id === this.dragId) return
                 item.style.transform = ''
-                item.style.transition = '' 
+                item.style.transition = ''
               })
               this.moving = false
             }, this.animateTime)
