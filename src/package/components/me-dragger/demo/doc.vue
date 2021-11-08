@@ -58,7 +58,7 @@
                   <div>options</div>
                 </td>
                 <td>
-                  <div>目标列表，以.sync方式传入组件进行实时排序更新，必传属性</div>
+                  <div>目标列表，用于生成新的排序，必传属性</div>
                 </td>
                 <td>
                   <div>array</div>
@@ -76,7 +76,7 @@
                 </td>
                 <td>
                   <div>
-                    目标对象识别标识，必传属性
+                    列表项标识字段，即通过哪个字段来区分列表项，必传属性
                   </div>
                 </td>
                 <td>
@@ -166,16 +166,16 @@
             <tbody>
               <tr>
                 <td>
-                  <div>------</div>
+                  <div>orderChange</div>
+                </td>
+                <td>
+                  <div>当顺序发生改变时触发该事件</div>
                 </td>
                 <td>
                   <div>------</div>
                 </td>
                 <td>
-                  <div>------</div>
-                </td>
-                <td>
-                  <div>------</div>
+                  <div>新的排序列表（不会对options直接修改，由插件引用者在该事件中自行决定是否使用新排序）</div>
                 </td>
               </tr>
             </tbody>
@@ -199,10 +199,10 @@
             <tbody>
               <tr>
                 <td>
-                  <div>------</div>
+                  <div>默认插槽</div>
                 </td>
                 <td>
-                  <div>------</div>
+                  <div>列表项</div>
                 </td>
               </tr>
             </tbody>
