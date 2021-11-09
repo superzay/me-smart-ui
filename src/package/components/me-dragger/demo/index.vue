@@ -2,7 +2,7 @@
   <div class='demo-me-dragger'>
     <h2 class='title'>me-dragger组件文档（文章最后有演示demo）</h2>
     <p class='explain'>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一款基于vue的PC端拖拽排序插件。实现对目标的自由拖拽、实时响应排序。
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一款基于vue的PC端拖拽排序插件。实现对目标的自由拖拽、实时响应排序。支持嵌套。
     </p>
     <!-- 说明文档 -->
     <doc></doc>
