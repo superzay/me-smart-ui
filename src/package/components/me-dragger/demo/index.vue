@@ -1,9 +1,13 @@
 <template>
   <div class='demo-me-dragger'>
-    <h2 class='title'>me-dragger组件文档（文章最后有演示demo）</h2>
+    <h2 class='title'>me-dragger PC端拖拽排序组件（文档最后有演示demo）</h2>
     <p class='explain'>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一款基于vue的PC端拖拽排序插件。实现对目标的自由拖拽、实时响应排序。
     </p>
+    <div class='effect'>
+      <p>效果演示</p>
+      <img src="http://182.43.179.137:81/public/images/dragOrder.gif" alt="">
+    </div>
     <!-- 说明文档 -->
     <doc></doc>
 
@@ -71,6 +75,15 @@
       margin: 10px 0 -10px 0;
       font-size: 13px;
       color: #666;
+    }
+
+    .effect{
+      margin-top:20px;
+      font-weight: 700;
+      img{
+        margin-top:5px;
+        width:70%
+      }
     }
 
     .text {
