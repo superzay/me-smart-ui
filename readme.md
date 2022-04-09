@@ -7,7 +7,7 @@
 
 
 ## 文档，及演示
-在线文档和演示demo：(http://47.110.129.207/vue-components/me-smart-ui/)
+在线文档和演示demo：(http://47.110.129.207/me-smart-ui/)
 
 ![输入图片说明](http://47.110.129.207/images/1234567.jpg)
 
