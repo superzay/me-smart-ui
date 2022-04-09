@@ -33,7 +33,7 @@ const getOutput = function () {
     return {
       filename: 'js/[name]-[hash].js',
       path: path.resolve(__dirname, './dist'),
-      publicPath: '/vue-components/me-smart-ui/'
+      publicPath: '/me-smart-ui/'
     };
   } else if (['dev', 'dev-test-lib'].includes(process.env.run)) {
     return {
@@ -74,7 +74,7 @@ if (['dev', 'build-main', 'dev-test-lib'].includes(process.env.run)) {
 const autoprefixer = {
   loader: 'postcss-loader',
   options: {
-    postcssOptions:{
+    postcssOptions: {
       plugins: [require('autoprefixer')({
         browsers: [ //浏览器列表
           'ie>=10',
@@ -86,7 +86,7 @@ const autoprefixer = {
         ]
       })]
     }
-    
+
   }
 }
 
@@ -119,7 +119,7 @@ module.exports = {
         loader: 'vue-loader',
         options: {
           loaders: {
-            css: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader',autoprefixer],
+            css: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', autoprefixer],
             scss: [process.env.NODE_ENV === 'production' ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader', autoprefixer, 'sass-loader'],
             js: 'babel-loader'
           }
