@@ -1,4 +1,4 @@
-<template lang='html'>
+<template>
   <div class='content'>
     <header>
       <p class='logo center-y'>me-smart-ui 库</p>
@@ -33,7 +33,7 @@
   export default {
     data() {
       return {
-        active: 'me-image-crop',
+        active: 'me-dragger',
         compMap: new Map(),// 组件map集合
       }
     },

@@ -1,6 +1,6 @@
 <template>
   <div class='demo-me-image-crop'>
-    <h2 class='title'>me-image-crop组件文档（文章最后有演示demo）</h2>
+    <h2 class='title'>me-image-crop图片旋转缩放裁剪组件（文档最后有演示demo）</h2>
     <p class='explain'>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一款基于“矩阵、旋转变换、三维向量及其叉积”开发的vue图片旋转、缩放、裁剪组件。兼容移动和pc端。包括图片预览/单指拖动/双指缩放/双指旋转/鼠标拖动/鼠标滚轮缩放/鼠标单击旋转和长按旋转/图片裁剪输出等。简单方便，皮实易用，解决项目中的头像设置等问题，采用npm安装使用。
     </p>
