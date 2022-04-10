@@ -160,7 +160,7 @@ export default {
           position: absolute;
           width: calc(100% - 30px);
           height: 1px;
-          top: -1px;
+          top: -2px;
           left: 50%;
           transform: translateX(-50%);
           border-bottom: 1px dashed #e0e0e0;
