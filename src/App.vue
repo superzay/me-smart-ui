@@ -148,20 +148,19 @@ export default {
 
     .aside-list {
       overflow: hidden;
-      padding-bottom: 2px;
       .aside-list-item {
         height: 50px;
         text-align: center;
         cursor: pointer;
         font-size: 14px;
         position: relative;
-        &::after {
+        &::before {
           display: block;
           content: "";
           position: absolute;
           width: calc(100% - 30px);
           height: 1px;
-          bottom: -1px;
+          top: -1px;
           left: 50%;
           transform: translateX(-50%);
           border-bottom: 1px dashed #e0e0e0;
@@ -172,7 +171,7 @@ export default {
           background: #eee;
           color: #27b1a8;
           //font-weight: bold;
-          &::after {
+          &::before {
             display: none;
             content: "";
           }
