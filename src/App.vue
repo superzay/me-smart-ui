@@ -5,6 +5,7 @@
     </header>
     <!-- 组件列表 -->
     <aside @touchstart.stop="toggle('aside')">
+      <!-- me-smart-ui组件 -->
       <div class="aside-flag center">
         <i class="iconfont icon-mulu"></i>
       </div>
@@ -22,7 +23,7 @@
           </div>
         </div>
 
-        <!-- threejs动效集合 -->
+        <!-- threejs动画特效-->
         <div
           class="aside-list-item"
           :class="{ active: `threejs` == active }"
@@ -30,6 +31,18 @@
         >
           <div class="center aside-list-item-text">
             <span>threejs 动画特效</span>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- canvase动画特效 -->
+        <div
+          class="aside-list-item"
+          :class="{ active: `canvas` == active }"
+          @click="active = `canvas`"
+        >
+          <div class="center aside-list-item-text">
+            <span>canvas 动画特效</span>
             <span></span>
           </div>
         </div>
@@ -46,6 +59,7 @@
 <script>
 import common from "src/assets/js/common";
 import threejs from "src/assets/components/threejs.vue";
+import canvas from "src/assets/components/canvas.vue";
 export default {
   data() {
     return {
@@ -61,9 +75,10 @@ export default {
       if (!this.compMap) return false;
       const comp = this.compMap.get(this.active);
       if (comp) return comp;
-      if (this.active == "threejs") {
-        return threejs;
-      }
+
+      if (this.active == "threejs") return threejs;
+      if (this.active == "canvas") return canvas;
+
       // 动态获取组件
       import(`./package/components/${this.active}/demo/index.vue`).then(
         (arg) => {
@@ -127,7 +142,7 @@ export default {
       text-align: center;
       padding: 5px 0;
       color: #fff;
-      left: 20px;
+      left: 15px;
       font-size: 12px;
     }
   }
@@ -149,10 +164,11 @@ export default {
     .aside-list {
       overflow: hidden;
       .aside-list-item {
-        height: 50px;
+        height: 45px;
         text-align: center;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 12px;
+        color: #444;
         position: relative;
         &::before {
           display: block;

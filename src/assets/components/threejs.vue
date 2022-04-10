@@ -116,6 +116,7 @@ export default {
     float: left;
     p {
       padding: 10px;
+      color: #27b1a8;
     }
     iframe {
       width: calc((100vw - 260px) / 2);
