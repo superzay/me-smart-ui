@@ -77,7 +77,7 @@ export default {
       color: #27b1a8;
     }
     iframe {
-      width: calc(100vw - 260px);
+      width: calc(100vw - 230px);
       height: 400px;
     }
   }

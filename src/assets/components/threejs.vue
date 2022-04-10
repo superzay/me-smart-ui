@@ -1,10 +1,10 @@
 <template>
   <div class="threejs">
     <p class="introduce">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于这里的内容，需要你先去了解基础的webgl知识，了解矩阵、向量、透视投影、裁剪空间、视图变换、着色器原理、threejs框架等等内容。
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于这里的内容，需要你先去了解基础的webgl知识，了解矩阵、向量、透视投影、裁剪空间、视图变换、着色器原理、threejs框架等等内容。
       <br />
       <br />
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之前在研究webgl和threejs的时候在网上查到了很多资料（包括郭隆邦的很多资料觉得很好），在此对所有小伙伴们表示感谢。这里也把之前研究的内容拆解出来，分享给感兴趣的小伙伴们学习、研究和参考。也给大家推荐几本比较好的参考资料：OpenGL着色语言、OPENGL
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;之前在研究webgl和threejs的时候在网上查到了很多资料（包括郭隆邦的很多资料觉得很好），在此对所有小伙伴们表示感谢。这里也把之前研究的内容拆解出来，分享给感兴趣的小伙伴们学习、研究和参考。也给大家推荐几本比较好的参考资料：OpenGL着色语言、OPENGL
       ES 3.0编程指南 第2版、3D游戏与计算机图形学中的数学方法 第3版。
       <br />
       <br />
@@ -119,8 +119,8 @@ export default {
       color: #27b1a8;
     }
     iframe {
-      width: calc((100vw - 260px) / 2);
-      height: calc((100vw - 260px) / 2 / 1.5);
+      width: calc((100vw - 240px) / 2);
+      height: calc((100vw - 240px) / 2 / 1.5);
     }
   }
 
