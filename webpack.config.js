@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
@@ -47,11 +48,17 @@ const plugins = [
   new MiniCssExtractPlugin({
     filename: "css/[name].css",
     chunkFilename: "css/vue-[name]-[hash].css"
-  }), new VueLoaderPlugin(),
+  }),
+  new VueLoaderPlugin(),
   new moduleLoaderPlugin(),
   new removeDirPlugin(['./lib', './dist']),
   new addEntryPlugin(), new assetPathPlugin(),
-  new moveDirPlugin([['./lib/iconfont', './lib/css/iconfont']])
+  new moveDirPlugin([['./lib/iconfont', './lib/css/iconfont']]),
+  new CopyPlugin({
+    patterns: [
+      { from: path.resolve(__dirname, "./public"), to: path.resolve(__dirname, "./dist/public") },
+    ],
+  }),
 ];
 
 if (['dev', 'build-main', 'dev-test-lib'].includes(process.env.run)) {

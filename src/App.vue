@@ -15,7 +15,7 @@
           :key="item"
           class="aside-list-item"
           :class="{ active: item == active }"
-          @click="active = item"
+          @click="activeTab(item)"
         >
           <div class="center aside-list-item-text">
             <span>{{ item }} </span>
@@ -27,7 +27,7 @@
         <div
           class="aside-list-item"
           :class="{ active: `threejs` == active }"
-          @click="active = `threejs`"
+          @click="activeTab(`threejs`)"
         >
           <div class="center aside-list-item-text">
             <span>threejs 动画特效</span>
@@ -39,7 +39,7 @@
         <div
           class="aside-list-item"
           :class="{ active: `canvas` == active }"
-          @click="active = `canvas`"
+          @click="activeTab(`canvas`)"
         >
           <div class="center aside-list-item-text">
             <span>canvas 动画特效</span>
@@ -109,6 +109,10 @@ export default {
           el.classList.add("aside-close");
         }
       }
+    },
+    activeTab(tab) {
+      this.active = tab;
+      _hmt && _hmt.push(["_trackPageview", tab]); // 百度统计
     },
   },
   destoryed() {
