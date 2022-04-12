@@ -10,9 +10,11 @@
 在线文档和演示demo：(http://47.110.129.207/me-smart-ui/)
 
 拖拽排序效果
-![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/1.png)
+
+![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/dragOrder.png)
 
 图片裁剪文档
+
 ![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/1.png)
 
 
