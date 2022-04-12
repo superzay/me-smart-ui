@@ -13,7 +13,7 @@
 ![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/dragOrder.gif)
 
 图片裁剪效果
-![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/1.png)
+![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/2.png)
 
 
 ## 安装
