@@ -1,18 +1,21 @@
 <template>
   <div class="threejs">
     <p class="introduce">
-      &nbsp;&nbsp;&nbsp;闲来无事写的一些canvas小动画，可以熟悉canvas的基本api和应用。喜欢的同学可以去仓库拉源码
+      闲来无事写的一些canvas小动画，可以熟悉canvas的基本api和应用。喜欢的同学可以去仓库拉源码
       <br />
       <br />
 
-      <span class="address">仓库地址：</span>
+      ● 小烟花
       <br />
-      &nbsp;&nbsp;&nbsp;<a href="https://gitee.com/superzay/canvas-firework"
-        >https://gitee.com/superzay/canvas-firework</a
-      >
+      ● 多彩泡泡
       <br />
-      &nbsp;&nbsp;&nbsp;<a href="https://gitee.com/superzay/canvas-bubble"
-        >https://gitee.com/superzay/canvas-bubble</a
+      ● 中国地图
+      <br />
+      <br />
+
+      <span class="address">仓库地址：</span
+      ><a href="https://gitee.com/superzay/canvas-animate"
+        >https://gitee.com/superzay/canvas-animate</a
       >
     </p>
     <div class="item firework">
@@ -26,6 +29,13 @@
       <p>多彩泡泡（点一点）</p>
       <iframe
         src="http://182.43.179.137:81/canvas/bubble.html"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="item chinaMap">
+      <p>中国地图</p>
+      <iframe
+        src="http://182.43.179.137:81/canvas/chinaMap.html"
         frameborder="0"
       ></iframe>
     </div>
@@ -66,6 +76,7 @@ export default {
     color: #999;
     font-size: 12px;
     margin-top: 10px;
+    padding-left: 20px;
     .address {
       font-weight: bold;
     }
@@ -79,6 +90,13 @@ export default {
     iframe {
       width: calc(100vw - 230px);
       height: 400px;
+      background: #fff;
+    }
+
+    &.chinaMap {
+      iframe {
+        height: 600px;
+      }
     }
   }
 
@@ -86,6 +104,12 @@ export default {
     .item {
       iframe {
         width: calc(100vw - 60px);
+      }
+
+      &.chinaMap {
+        iframe {
+          height: 240px;
+        }
       }
     }
   }

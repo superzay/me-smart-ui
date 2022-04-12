@@ -9,6 +9,24 @@
       <br />
       <br />
 
+      ● 雷达扫描
+      <br />
+      ● 流光
+      <br />
+      ● 生长
+      <br />
+      ● 光幕
+      <br />
+      ● 渐变
+      <br />
+      ● 飞线
+      <br />
+      ● 包围线
+      <br />
+      ● 透明
+      <br />
+      <br />
+
       <span class="address">仓库地址：</span
       ><a href="https://gitee.com/superzay/threejs-animate"
         >https://gitee.com/superzay/threejs-animate</a
@@ -104,6 +122,7 @@ export default {
 .threejs {
   padding-bottom: 50px;
   .introduce {
+    padding-left: 15px;
     color: #999;
     font-size: 12px;
     margin-top: 10px;
