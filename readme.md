@@ -9,11 +9,11 @@
 ### 文档，及演示
 在线文档和演示demo：(http://47.110.129.207/me-smart-ui/)
 
-拖拽排序效果
+拖拽排序效果                 
 ![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/dragOrder.gif)
 
 
-图片裁剪效果
+图片裁剪效果                                               
 ![输入图片说明](http://182.43.179.137:81/public/images/me-smart-ui/2.png)
 
 
