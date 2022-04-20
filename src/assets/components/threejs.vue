@@ -123,7 +123,7 @@ export default {
   methods: {
     start() {
       this.timer = setInterval(() => {
-        if (this.num > 7) {
+        if (this.num > 9) {
           clearInterval(this.timer);
           return;
         }
