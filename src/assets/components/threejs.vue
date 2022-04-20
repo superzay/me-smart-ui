@@ -15,6 +15,8 @@
       <br />
       ● 粒子系统（星空）
       <br />
+      ● 粒子系统（烟雾）
+      <br />
       ● 流动
       <br />
       ● 生长
@@ -56,41 +58,48 @@
       ></iframe>
     </div>
     <div v-if="num >= 3" class="item">
+      <p>粒子系统（烟雾）</p>
+      <iframe
+        src="http://182.43.179.137:81/threejs/smoke"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div v-if="num >= 4" class="item">
       <p>流动</p>
       <iframe
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 4" class="item">
+    <div v-if="num >= 5" class="item">
       <p>生长</p>
       <iframe
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 5" class="item">
+    <div v-if="num >= 6" class="item">
       <p>光幕</p>
       <iframe
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 6" class="item">
+    <div v-if="num >= 7" class="item">
       <p>渐变</p>
       <iframe
         src="http://182.43.179.137:81/threejs/gradient"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num > 7" class="item">
+    <div v-if="num > 8" class="item">
       <p>飞线</p>
       <iframe
         src="http://182.43.179.137:81/threejs/fly"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 8" class="item">
+    <div v-if="num >= 9" class="item">
       <p>包围线</p>
       <iframe
         src="http://182.43.179.137:81/threejs/line"
@@ -129,6 +138,7 @@ export default {
 @import "src/assets/css/var.scss";
 
 .threejs {
+  min-height: 3000px;
   padding-bottom: 50px;
   .introduce {
     padding-left: 15px;
@@ -153,6 +163,9 @@ export default {
   }
 
   @media screen and (max-width: 1000px) {
+    .threejs {
+      min-height: 1500px;
+    }
     .item {
       iframe {
         width: calc(100vw - 60px);
