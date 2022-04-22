@@ -123,7 +123,8 @@ export default {
   methods: {
     start() {
       this.timer = setInterval(() => {
-        if (this.num > 9) {
+        const showNum = window.innerWidth < 1200 ? 7 : 9;
+        if (this.num > showNum) {
           clearInterval(this.timer);
           return;
         }
