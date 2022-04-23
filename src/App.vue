@@ -63,7 +63,7 @@ import canvas from "src/assets/components/canvas.vue";
 export default {
   data() {
     return {
-      active: "me-dragger",
+      active: "threejs",
       compMap: new Map(), // 组件map集合
     };
   },
