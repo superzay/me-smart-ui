@@ -124,7 +124,7 @@ export default {
       setTimeout(() => {
         const timer = setInterval(() => {
           const showNum = window.innerWidth < 1200 ? 7 : 9;
-          if (this.num > showNum) {
+          if (this.num >= showNum) {
             clearInterval(timer);
             return;
           }
