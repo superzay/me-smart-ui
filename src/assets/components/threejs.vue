@@ -9,6 +9,8 @@
       <br />
       <br />
 
+      ● 物理引擎
+      <br />
       ● 雷达扫描
       <br />
       ● 3D中国地图
@@ -27,8 +29,6 @@
       <br />
       ● 飞线
       <br />
-      ● 包围线
-      <br />
       <br />
 
       <span class="address">仓库地址：</span
@@ -37,72 +37,72 @@
       >
     </p>
     <div v-if="num >= 0" class="item">
+      <p>物理引擎</p>
+      <iframe
+        src="http://182.43.179.137:81/threejs/engine"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div v-if="num >= 1" class="item">
       <p>雷达扫描</p>
       <iframe
         src="http://182.43.179.137:81/threejs/radar"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 1" class="item">
+    <div v-if="num >= 2" class="item">
       <p>3D中国地图</p>
       <iframe
         src="http://182.43.179.137:81/threejs/chinaMap"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 2" class="item">
+    <div v-if="num >= 3" class="item">
       <p>粒子系统（星空）</p>
       <iframe
         src="http://182.43.179.137:81/threejs/star"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 3" class="item">
+    <div v-if="num >= 4" class="item">
       <p>粒子系统（烟雾）</p>
       <iframe
         src="http://182.43.179.137:81/threejs/smoke"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 4" class="item">
+    <div v-if="num >= 5" class="item">
       <p>流动</p>
       <iframe
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 5" class="item">
+    <div v-if="num >= 6" class="item">
       <p>生长</p>
       <iframe
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 6" class="item">
+    <div v-if="num >= 7" class="item">
       <p>光幕</p>
       <iframe
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 7" class="item">
+    <div v-if="num >= 8" class="item">
       <p>渐变</p>
       <iframe
         src="http://182.43.179.137:81/threejs/gradient"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num > 8" class="item">
+    <div v-if="num > 9" class="item">
       <p>飞线</p>
       <iframe
         src="http://182.43.179.137:81/threejs/fly"
-        frameborder="0"
-      ></iframe>
-    </div>
-    <div v-if="num >= 9" class="item">
-      <p>包围线</p>
-      <iframe
-        src="http://182.43.179.137:81/threejs/line"
         frameborder="0"
       ></iframe>
     </div>
@@ -114,7 +114,6 @@ export default {
   data() {
     return {
       num: 0,
-      timer: null,
     };
   },
   created() {
@@ -122,14 +121,16 @@ export default {
   },
   methods: {
     start() {
-      this.timer = setInterval(() => {
-        const showNum = window.innerWidth < 1200 ? 7 : 9;
-        if (this.num > showNum) {
-          clearInterval(this.timer);
-          return;
-        }
-        this.num++;
-      }, 3000);
+      setTimeout(() => {
+        const timer = setInterval(() => {
+          const showNum = window.innerWidth < 1200 ? 7 : 9;
+          if (this.num > showNum) {
+            clearInterval(timer);
+            return;
+          }
+          this.num++;
+        }, 3000);
+      }, 20000);
     },
   },
 };
