@@ -36,72 +36,82 @@
         >https://gitee.com/superzay/threejs-animate</a
       >
     </p>
-    <div v-if="num >= 0" class="item">
+    <div class="item">
       <p>物理引擎</p>
       <iframe
+        v-if="num >= 0"
         src="http://182.43.179.137:81/threejs/engine"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 1" class="item">
+    <div class="item">
       <p>雷达扫描</p>
       <iframe
+        v-if="num >= 1"
         src="http://182.43.179.137:81/threejs/radar"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 2" class="item">
+    <div class="item">
       <p>3D中国地图</p>
       <iframe
+        v-if="num >= 2"
         src="http://182.43.179.137:81/threejs/chinaMap"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 3" class="item">
+    <div class="item">
       <p>粒子系统（星空）</p>
       <iframe
+        v-if="num >= 3"
         src="http://182.43.179.137:81/threejs/star"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 4" class="item">
+    <div class="item">
       <p>粒子系统（烟雾）</p>
       <iframe
+        v-if="num >= 4"
         src="http://182.43.179.137:81/threejs/smoke"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 5" class="item">
+    <div class="item">
       <p>流动</p>
       <iframe
+        v-if="num >= 5"
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 6" class="item">
+    <div class="item">
       <p>生长</p>
       <iframe
+        v-if="num >= 6"
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 7" class="item">
+    <div class="item">
       <p>光幕</p>
       <iframe
+        v-if="num >= 7"
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num >= 8" class="item">
+    <div class="item">
       <p>渐变</p>
       <iframe
+        v-if="num >= 8"
         src="http://182.43.179.137:81/threejs/gradient"
         frameborder="0"
       ></iframe>
     </div>
-    <div v-if="num > 9" class="item">
+    <div class="item">
       <p>飞线</p>
       <iframe
+        v-if="num >= 9"
         src="http://182.43.179.137:81/threejs/fly"
         frameborder="0"
       ></iframe>
@@ -130,7 +140,7 @@ export default {
           }
           this.num++;
         }, 3000);
-      }, 14000);
+      }, 10000);
     },
   },
 };
@@ -152,15 +162,17 @@ export default {
     }
   }
   .item {
-    margin: 20px 10px 0 0;
+    margin: 20px 10px 10px 0;
     float: left;
+    width: calc((100vw - 240px) / 2);
+    height: calc((100vw - 240px) / 2 / 1.5);
     p {
       padding: 10px;
       color: #27b1a8;
     }
     iframe {
-      width: calc((100vw - 240px) / 2);
-      height: calc((100vw - 240px) / 2 / 1.5);
+      width: 100%;
+      height: calc(100% - 20px);
     }
   }
 
@@ -169,9 +181,11 @@ export default {
       min-height: 1500px;
     }
     .item {
+      width: calc(100vw - 60px);
+      height: calc((100vw - 60px) / 1.5);
       iframe {
-        width: calc(100vw - 60px);
-        height: calc((100vw - 60px) / 1.5);
+        width: 100%;
+        height: calc(100% - 20px);
       }
     }
   }
