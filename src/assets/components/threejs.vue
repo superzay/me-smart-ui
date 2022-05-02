@@ -124,24 +124,30 @@ export default {
   data() {
     return {
       num: 0,
+      showNum: 0,
     };
   },
   created() {
-    this.start();
+    //this.start();
+    this.showNum = window.innerWidth < 1200 ? 7 : 9;
+    window.addEventListener("message", this.postMessage);
   },
   methods: {
     start() {
+      if (this.num >= this.showNum) return;
+      this.num++;
       setTimeout(() => {
-        const timer = setInterval(() => {
-          const showNum = window.innerWidth < 1200 ? 7 : 9;
-          if (this.num >= showNum) {
-            clearInterval(timer);
-            return;
-          }
-          this.num++;
-        }, 3000);
-      }, 10000);
+        this.start();
+      }, 3000);
     },
+    postMessage(event) {
+      if (event.data == "engineOver") {
+        this.start();
+      }
+    },
+  },
+  beforeDestory() {
+    window.removeEventListener("message", this.postMessage);
   },
 };
 </script>
