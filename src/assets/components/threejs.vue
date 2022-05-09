@@ -19,6 +19,8 @@
       <br />
       ● 粒子系统（烟雾）
       <br />
+      ● 骨骼动画（最简原理模型）
+      <br />
       ● 流动
       <br />
       ● 生长
@@ -77,9 +79,17 @@
       ></iframe>
     </div>
     <div class="item">
-      <p>流动</p>
+      <p>骨骼动画（最简原理模型）</p>
       <iframe
         v-if="num >= 5"
+        src="http://182.43.179.137:81/threejs/bone"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="item">
+      <p>流动</p>
+      <iframe
+        v-if="num >= 6"
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
@@ -87,7 +97,7 @@
     <div class="item">
       <p>生长</p>
       <iframe
-        v-if="num >= 6"
+        v-if="num >= 7"
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
@@ -95,7 +105,7 @@
     <div class="item">
       <p>光幕</p>
       <iframe
-        v-if="num >= 7"
+        v-if="num >= 8"
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
@@ -103,7 +113,7 @@
     <div class="item">
       <p>渐变</p>
       <iframe
-        v-if="num >= 8"
+        v-if="num >= 9"
         src="http://182.43.179.137:81/threejs/gradient"
         frameborder="0"
       ></iframe>
@@ -111,7 +121,7 @@
     <div class="item">
       <p>飞线</p>
       <iframe
-        v-if="num >= 9"
+        v-if="num >= 10"
         src="http://182.43.179.137:81/threejs/fly"
         frameborder="0"
       ></iframe>
@@ -129,7 +139,7 @@ export default {
   },
   created() {
     //this.start();
-    this.showNum = window.innerWidth < 1200 ? 7 : 9;
+    this.showNum = window.innerWidth < 1200 ? 7 : 10;
     window.addEventListener("message", this.postMessage);
   },
   methods: {
