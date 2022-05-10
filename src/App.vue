@@ -46,6 +46,18 @@
             <span></span>
           </div>
         </div>
+
+        <!-- CesiumGIS 地理信息 -->
+        <div
+          class="aside-list-item"
+          :class="{ active: `cesium` == active }"
+          @click="activeTab(`cesium`)"
+        >
+          <div class="center aside-list-item-text">
+            <span> cesium 地理信息</span>
+            <span></span>
+          </div>
+        </div>
       </div>
     </aside>
 
@@ -60,6 +72,7 @@
 import common from "src/assets/js/common";
 import threejs from "src/assets/components/threejs.vue";
 import canvas from "src/assets/components/canvas.vue";
+import cesium from "src/assets/components/cesium.vue";
 export default {
   data() {
     return {
@@ -78,6 +91,7 @@ export default {
 
       if (this.active == "threejs") return threejs;
       if (this.active == "canvas") return canvas;
+      if (this.active == "cesium") return cesium;
 
       // 动态获取组件
       import(`./package/components/${this.active}/demo/index.vue`).then(
