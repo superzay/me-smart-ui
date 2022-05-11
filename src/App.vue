@@ -128,6 +128,8 @@ export default {
       this.active = tab;
       window.scrollTo(0, 0);
       _hmt && _hmt.push(["_trackPageview", tab]); // 百度统计
+      let el = this.$refs.asideList;
+      el?.classList.add("aside-close");
     },
   },
   destoryed() {
