@@ -54,7 +54,7 @@
           @click="activeTab(`cesium`)"
         >
           <div class="center aside-list-item-text">
-            <span> cesium 地理信息</span>
+            <span> GIS 地理信息系统</span>
             <span></span>
           </div>
         </div>
