@@ -76,7 +76,7 @@ import cesium from "src/assets/components/cesium.vue";
 export default {
   data() {
     return {
-      active: "threejs",
+      active: "cesium",
       compMap: new Map(), // 组件map集合
     };
   },
