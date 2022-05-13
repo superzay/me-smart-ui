@@ -2,17 +2,17 @@
   <div class="cesium">
     <p class="introduce">
       最近在研究GIS地理信息系统时，接触到了Cesium框架，轻巧方便，易于上手。隧边研究边实践，写了几个简单的demo，算作是对Cesium基本机制、用法
-      和api的熟悉。这里分享给有同样诉求小伙伴们参考。过两天把demo整理一下上传到gitee仓库
-      <!-- <br />
+      和api的熟悉。这里分享给有同样诉求的小伙伴们参考。喜欢的同学可以去仓库拉源码。
       <br />
-    
-      ● 环球飞行
+      <br />
+
+      <!--  ● 环球飞行
       <br /> -->
 
-      <!-- <span class="address">仓库地址：</span
-      ><a href="https://gitee.com/superzay/canvas-animate"
-        >https://gitee.com/superzay/canvas-animate</a
-      > -->
+      <span class="address">仓库地址：</span
+      ><a href="https://gitee.com/superzay/cesium"
+        >https://gitee.com/superzay/cesium</a
+      >
     </p>
     <div class="item firework">
       <p>环球飞行</p>
