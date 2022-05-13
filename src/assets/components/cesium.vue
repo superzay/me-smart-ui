@@ -64,7 +64,7 @@ export default {
     }
   }
   .item {
-    margin: 20px 10px 0 0;
+    margin: 10px 10px 0 0;
     p {
       padding: 10px;
       color: #27b1a8;
