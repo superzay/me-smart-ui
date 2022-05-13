@@ -19,7 +19,7 @@
       <br />
       ● 粒子系统（烟雾）
       <br />
-      ● 骨骼动画（最简原理模型）
+      ● 骨骼系统
       <br />
       ● 流动
       <br />
@@ -79,7 +79,7 @@
       ></iframe>
     </div>
     <div class="item">
-      <p>骨骼动画（最简原理模型）</p>
+      <p>骨骼系统</p>
       <iframe
         v-if="num >= 5"
         src="http://182.43.179.137:81/threejs/bone"
