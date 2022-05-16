@@ -11,6 +11,8 @@
 
       ● 物理引擎
       <br />
+      ● 自由行走
+      <br />
       ● 雷达扫描
       <br />
       ● 3D中国地图
@@ -38,8 +40,15 @@
         >https://gitee.com/superzay/threejs-animate</a
       >
     </p>
+
     <div class="item">
-      <p>物理引擎</p>
+      <p>
+        物理引擎
+
+        <span style="font-size: 12px"
+          >&nbsp;&nbsp;demo较多，gpu会有些卡顿，移动端限制了数量，pc端可以查看全部demo</span
+        >
+      </p>
       <iframe
         v-if="num >= 0"
         src="http://182.43.179.137:81/threejs/engine"
@@ -47,9 +56,17 @@
       ></iframe>
     </div>
     <div class="item">
-      <p>雷达扫描</p>
+      <p>自由行走（点击地面行走）</p>
       <iframe
         v-if="num >= 1"
+        src="http://182.43.179.137:81/threejs/walk"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="item">
+      <p>雷达扫描</p>
+      <iframe
+        v-if="num >= 2"
         src="http://182.43.179.137:81/threejs/radar"
         frameborder="0"
       ></iframe>
@@ -57,7 +74,7 @@
     <div class="item">
       <p>3D中国地图</p>
       <iframe
-        v-if="num >= 2"
+        v-if="num >= 3"
         src="http://182.43.179.137:81/threejs/chinaMap"
         frameborder="0"
       ></iframe>
@@ -65,7 +82,7 @@
     <div class="item">
       <p>粒子系统（星空）</p>
       <iframe
-        v-if="num >= 3"
+        v-if="num >= 4"
         src="http://182.43.179.137:81/threejs/star"
         frameborder="0"
       ></iframe>
@@ -73,7 +90,7 @@
     <div class="item">
       <p>粒子系统（烟雾）</p>
       <iframe
-        v-if="num >= 4"
+        v-if="num >= 5"
         src="http://182.43.179.137:81/threejs/smoke"
         frameborder="0"
       ></iframe>
@@ -81,7 +98,7 @@
     <div class="item">
       <p>骨骼系统</p>
       <iframe
-        v-if="num >= 5"
+        v-if="num >= 6"
         src="http://182.43.179.137:81/threejs/bone"
         frameborder="0"
       ></iframe>
@@ -89,7 +106,7 @@
     <div class="item">
       <p>流动</p>
       <iframe
-        v-if="num >= 6"
+        v-if="num >= 7"
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
@@ -97,7 +114,7 @@
     <div class="item">
       <p>生长</p>
       <iframe
-        v-if="num >= 7"
+        v-if="num >= 8"
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
@@ -105,7 +122,7 @@
     <div class="item">
       <p>光幕</p>
       <iframe
-        v-if="num >= 8"
+        v-if="num >= 9"
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
@@ -113,7 +130,7 @@
     <div class="item">
       <p>渐变</p>
       <iframe
-        v-if="num >= 9"
+        v-if="num >= 10"
         src="http://182.43.179.137:81/threejs/gradient"
         frameborder="0"
       ></iframe>
@@ -121,7 +138,7 @@
     <div class="item">
       <p>飞线</p>
       <iframe
-        v-if="num >= 10"
+        v-if="num >= 11"
         src="http://182.43.179.137:81/threejs/fly"
         frameborder="0"
       ></iframe>
@@ -139,7 +156,7 @@ export default {
   },
   created() {
     //this.start();
-    this.showNum = window.innerWidth < 1200 ? 7 : 10;
+    this.showNum = window.innerWidth < 1200 ? 7 : 11;
     window.addEventListener("message", this.postMessage);
   },
   methods: {
