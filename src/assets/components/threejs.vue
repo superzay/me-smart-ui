@@ -55,7 +55,7 @@
         frameborder="0"
       ></iframe>
     </div>
-    <div class="item">
+    <div class="item walk">
       <p>自由行走（点击地面行走）</p>
       <iframe
         v-if="num >= 1"
@@ -220,6 +220,9 @@ export default {
         width: 100%;
         height: calc(100% - 20px);
       }
+    }
+    .walk {
+      margin-top: 40px;
     }
   }
 }
