@@ -10,28 +10,59 @@
       <br />
 
       ● 物理引擎
+      <a class="look" href="http://182.43.179.137:81/threejs/engine">查看 </a>
       <br />
       ● 自由行走
+      <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
       <br />
       ● 雷达扫描
+      <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
       <br />
-      ● 3D中国地图
+      ● 3D中国地图&nbsp;<a
+        class="look"
+        href="http://182.43.179.137:81/threejs/map"
+        >查看</a
+      >
       <br />
-      ● 粒子系统（星空）
+      ● 粒子系统（星空）<a
+        class="look"
+        href="http://182.43.179.137:81/threejs/star"
+        >查看</a
+      >
       <br />
-      ● 粒子系统（烟雾）
+      ● 粒子系统（烟雾）<a
+        class="look"
+        href="http://182.43.179.137:81/threejs/smoke"
+        >查看</a
+      >
       <br />
-      ● 骨骼系统
+      ● 骨骼系统&nbsp;<a
+        class="look"
+        href="http://182.43.179.137:81/threejs/bone"
+        >查看</a
+      >
       <br />
-      ● 流动
+      ● 流动&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/belt"
+        >查看</a
+      >
       <br />
-      ● 生长
+      ● 生长&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/grow"
+        >查看</a
+      >
       <br />
-      ● 光幕
+      ● 光幕&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/wall"
+        >查看</a
+      >
       <br />
-      ● 渐变
+      ● 渐变&nbsp;<a
+        class="look"
+        href="http://182.43.179.137:81/threejs/gradient "
+        >查看
+      </a>
       <br />
-      ● 飞线
+      ● 飞线&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/fly"
+        >查看</a
+      >
       <br />
       <br />
 
@@ -192,6 +223,11 @@ export default {
     margin-top: 10px;
     .address {
       font-weight: bold;
+    }
+    .look {
+      transform: scale(0.7);
+      display: inline-block;
+      color: #27b1a8;
     }
   }
   .item {
