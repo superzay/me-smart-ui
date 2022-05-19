@@ -30,7 +30,7 @@
           @click="activeTab(`threejs`)"
         >
           <div class="center aside-list-item-text">
-            <span>threejs 动画特效</span>
+            <span>threejs&nbsp;&nbsp;3D开发</span>
             <span></span>
           </div>
         </div>
@@ -42,7 +42,7 @@
           @click="activeTab(`canvas`)"
         >
           <div class="center aside-list-item-text">
-            <span>canvas 动画特效</span>
+            <span>canvas&nbsp;&nbsp;2D特效</span>
             <span></span>
           </div>
         </div>
