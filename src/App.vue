@@ -2,6 +2,7 @@
   <div class="content">
     <header>
       <p class="logo center-y">me-smart-ui 库</p>
+      <p class="connect">wxsuperzay</p>
     </header>
     <!-- 组件列表 -->
     <aside @touchstart.stop="toggle('aside')">
@@ -166,6 +167,13 @@ export default {
       padding: 5px 0;
       color: #fff;
       left: 15px;
+      font-size: 12px;
+    }
+    .connect {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      color: $themeColor;
       font-size: 12px;
     }
   }
