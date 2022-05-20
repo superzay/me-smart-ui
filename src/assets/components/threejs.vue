@@ -18,6 +18,12 @@
       ● 雷达扫描
       <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
       <br />
+      ● 透明光幕&nbsp;<a
+        class="look"
+        href="http://182.43.179.137:81/threejs/wall"
+        >查看</a
+      >
+      <br />
       ● 3D中国地图&nbsp;<a
         class="look"
         href="http://182.43.179.137:81/threejs/map"
@@ -47,10 +53,6 @@
       >
       <br />
       ● 生长&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/grow"
-        >查看</a
-      >
-      <br />
-      ● 光幕&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/wall"
         >查看</a
       >
       <br />
@@ -103,9 +105,17 @@
       ></iframe>
     </div>
     <div class="item">
-      <p>3D中国地图</p>
+      <p>透明光幕</p>
       <iframe
         v-if="num >= 3"
+        src="http://182.43.179.137:81/threejs/wall"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="item">
+      <p>3D中国地图</p>
+      <iframe
+        v-if="num >= 4"
         src="http://182.43.179.137:81/threejs/chinaMap"
         frameborder="0"
       ></iframe>
@@ -113,7 +123,7 @@
     <div class="item">
       <p>粒子系统（星空）</p>
       <iframe
-        v-if="num >= 4"
+        v-if="num >= 5"
         src="http://182.43.179.137:81/threejs/star"
         frameborder="0"
       ></iframe>
@@ -121,7 +131,7 @@
     <div class="item">
       <p>粒子系统（烟雾）</p>
       <iframe
-        v-if="num >= 5"
+        v-if="num >= 6"
         src="http://182.43.179.137:81/threejs/smoke"
         frameborder="0"
       ></iframe>
@@ -129,7 +139,7 @@
     <div class="item">
       <p>骨骼系统</p>
       <iframe
-        v-if="num >= 6"
+        v-if="num >= 7"
         src="http://182.43.179.137:81/threejs/bone"
         frameborder="0"
       ></iframe>
@@ -137,7 +147,7 @@
     <div class="item">
       <p>流动</p>
       <iframe
-        v-if="num >= 7"
+        v-if="num >= 8"
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
@@ -145,19 +155,12 @@
     <div class="item">
       <p>生长</p>
       <iframe
-        v-if="num >= 8"
+        v-if="num >= 9"
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
     </div>
-    <div class="item">
-      <p>光幕</p>
-      <iframe
-        v-if="num >= 9"
-        src="http://182.43.179.137:81/threejs/wall"
-        frameborder="0"
-      ></iframe>
-    </div>
+
     <div class="item">
       <p>渐变</p>
       <iframe
