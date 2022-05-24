@@ -263,7 +263,7 @@ export default {
   min-height: 3000px;
   padding-bottom: 50px;
   .introduce {
-    padding-left: 15px;
+    // padding-left: 15px;
     color: #999;
     font-size: 12px;
     margin-top: 10px;
