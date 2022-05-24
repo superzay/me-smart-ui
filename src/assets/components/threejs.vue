@@ -1,6 +1,6 @@
 <template>
   <div class="threejs">
-    <p class="introduce">
+    <div class="introduce">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于这里的内容，需要你先去了解基础的webgl知识，了解矩阵、向量、透视投影、裁剪空间、视图变换、着色器原理、threejs框架等等内容。
       <br />
       <br />
@@ -8,71 +8,98 @@
       ES 3.0编程指南 第2版、3D游戏与计算机图形学中的数学方法 第3版。
       <br />
       <br />
+      <div class="list">
+        <div class="left">
+          ● 物理引擎
+          <a class="look" href="http://182.43.179.137:81/threejs/engine"
+            >查看
+          </a>
+          <br />
+          ● 自由行走
+          <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
+          <br />
+          ● 雷达扫描
+          <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
+          <br />
+          ● 透明光幕&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/wall"
+            >查看</a
+          >
+          <br />
+          ● 3D中国地图&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/map"
+            >查看</a
+          >
+          <br />
+          ● 粒子系统 (星空)<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/star"
+            >查看</a
+          >
+          <br />
+          ● 粒子系统 (烟雾)<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/smoke"
+            >查看</a
+          >
+          <br />
+          ● 课堂助手 (圆锥曲线)<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/math/boneCurve/"
+            >查看</a
+          >
+          <br />
+        </div>
+        <div class="right">
+          ● 360º实景&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/scenery"
+            >查看</a
+          >
+          <br />
+          ● 骨骼系统&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/bone"
+            >查看</a
+          >
+          <br />
 
-      ● 物理引擎
-      <a class="look" href="http://182.43.179.137:81/threejs/engine">查看 </a>
-      <br />
-      ● 自由行走
-      <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
-      <br />
-      ● 雷达扫描
-      <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
-      <br />
-      ● 透明光幕&nbsp;<a
-        class="look"
-        href="http://182.43.179.137:81/threejs/wall"
-        >查看</a
-      >
-      <br />
-      ● 3D中国地图&nbsp;<a
-        class="look"
-        href="http://182.43.179.137:81/threejs/map"
-        >查看</a
-      >
-      <br />
-      ● 粒子系统（星空）<a
-        class="look"
-        href="http://182.43.179.137:81/threejs/star"
-        >查看</a
-      >
-      <br />
-      ● 粒子系统（烟雾）<a
-        class="look"
-        href="http://182.43.179.137:81/threejs/smoke"
-        >查看</a
-      >
-      <br />
-      ● 骨骼系统&nbsp;<a
-        class="look"
-        href="http://182.43.179.137:81/threejs/bone"
-        >查看</a
-      >
-      <br />
-      ● 流动&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/belt"
-        >查看</a
-      >
-      <br />
-      ● 生长&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/grow"
-        >查看</a
-      >
-      <br />
-      ● 渐变&nbsp;<a
-        class="look"
-        href="http://182.43.179.137:81/threejs/gradient "
-        >查看
-      </a>
-      <br />
-      ● 飞线&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/fly"
-        >查看</a
-      >
-      <br />
+          ● 流动&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/belt"
+            >查看</a
+          >
+          <br />
+          ● 生长&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/grow"
+            >查看</a
+          >
+          <br />
+          ● 渐变&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/gradient "
+            >查看
+          </a>
+          <br />
+          ● 飞线&nbsp;<a
+            class="look"
+            href="http://182.43.179.137:81/threejs/fly"
+            >查看</a
+          >
+          <br />
+        </div>
+      </div>
+
       <br />
 
       <span class="address">仓库地址：</span
       ><a href="https://gitee.com/superzay/threejs-animate"
         >https://gitee.com/superzay/threejs-animate</a
       >
-    </p>
+    </div>
 
     <div class="item">
       <p>
@@ -137,9 +164,25 @@
       ></iframe>
     </div>
     <div class="item">
-      <p>骨骼系统</p>
+      <p>课堂助手（圆锥曲线3D图解）</p>
       <iframe
         v-if="num >= 7"
+        src="http://182.43.179.137:81/threejs/math/boneCurve"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="item">
+      <p>360º实景</p>
+      <iframe
+        v-if="num >= 8"
+        src="http://182.43.179.137:81/threejs/scenery"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="item">
+      <p>骨骼系统</p>
+      <iframe
+        v-if="num >= 9"
         src="http://182.43.179.137:81/threejs/bone"
         frameborder="0"
       ></iframe>
@@ -147,7 +190,7 @@
     <div class="item">
       <p>流动</p>
       <iframe
-        v-if="num >= 8"
+        v-if="num >= 10"
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
@@ -155,7 +198,7 @@
     <div class="item">
       <p>生长</p>
       <iframe
-        v-if="num >= 9"
+        v-if="num >= 11"
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
@@ -164,7 +207,7 @@
     <div class="item">
       <p>渐变</p>
       <iframe
-        v-if="num >= 10"
+        v-if="num >= 12"
         src="http://182.43.179.137:81/threejs/gradient"
         frameborder="0"
       ></iframe>
@@ -172,7 +215,7 @@
     <div class="item">
       <p>飞线</p>
       <iframe
-        v-if="num >= 11"
+        v-if="num >= 13"
         src="http://182.43.179.137:81/threejs/fly"
         frameborder="0"
       ></iframe>
@@ -224,6 +267,16 @@ export default {
     color: #999;
     font-size: 12px;
     margin-top: 10px;
+    .list {
+      display: flex;
+      align-items: stretch;
+      .left {
+        width: 50%;
+      }
+      .right {
+        width: 50%;
+      }
+    }
     .address {
       font-weight: bold;
     }
