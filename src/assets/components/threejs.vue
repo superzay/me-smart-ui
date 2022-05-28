@@ -130,9 +130,9 @@
         src="http://182.43.179.137:81/threejs/walk"
         frameborder="0"
       ></iframe>
-      <p v-if="num < 1" class="tick">预览图</p>
+      <p v-if="num < 1 && startLoadPreview" class="tick">预览图</p>
       <img
-        v-if="num < 1"
+        v-if="num < 1 && startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/walk/walk.png"
         frameborder="0"
@@ -148,9 +148,9 @@
         src="http://182.43.179.137:81/threejs/flow"
         frameborder="0"
       ></iframe>
-      <p v-if="num < 2" class="tick">预览图</p>
+      <p v-if="num < 2 && startLoadPreview" class="tick">预览图</p>
       <img
-        v-if="num < 2"
+        v-if="num < 2 && startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/flow/flow.png"
         frameborder="0"
@@ -166,9 +166,9 @@
         src="http://182.43.179.137:81/threejs/radar"
         frameborder="0"
       ></iframe>
-      <p v-if="num < 3" class="tick">预览图</p>
+      <p v-if="num < 3 && startLoadPreview" class="tick">预览图</p>
       <img
-        v-if="num < 3"
+        v-if="num < 3 && startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/radar/radar.png"
         frameborder="0"
@@ -184,9 +184,9 @@
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
-      <p v-if="num < 4" class="tick">预览图</p>
+      <p v-if="num < 4 && startLoadPreview" class="tick">预览图</p>
       <img
-        v-if="num < 4"
+        v-if="num < 4 && startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/wall/wall.png"
         frameborder="0"
@@ -204,9 +204,9 @@
         src="http://182.43.179.137:81/threejs/chinaMap"
         frameborder="0"
       ></iframe>
-      <p v-if="num < 5" class="tick">预览图</p>
+      <p v-if="num < 5 && startLoadPreview" class="tick">预览图</p>
       <img
-        v-if="num < 5"
+        v-if="num < 5 && startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/chinaMap/chinaMap.png"
         frameborder="0"
@@ -222,9 +222,9 @@
         src="http://182.43.179.137:81/threejs/star"
         frameborder="0"
       ></iframe>
-      <p v-if="num < 6" class="tick">预览图</p>
+      <p v-if="num < 6 && startLoadPreview" class="tick">预览图</p>
       <img
-        v-if="num < 6"
+        v-if="num < 6 && startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/star/star.png"
         frameborder="0"
@@ -235,8 +235,9 @@
         粒子系统（烟雾）
         <a class="look" href="http://182.43.179.137:81/threejs/smoke/">查看</a>
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/smoke/smoke.png"
         frameborder="0"
@@ -249,8 +250,9 @@
           >查看</a
         >
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/math/boneCurve/boneCurve.png"
         frameborder="0"
@@ -261,8 +263,9 @@
         360º实景
         <a class="look" href="http://182.43.179.137:81/threejs/scenery">查看</a>
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/scenery/scenery.png"
         frameborder="0"
@@ -273,8 +276,9 @@
         骨骼系统
         <a class="look" href="http://182.43.179.137:81/threejs/bone">查看</a>
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/bone/bone.png"
         frameborder="0"
@@ -285,8 +289,9 @@
         流动
         <a class="look" href="http://182.43.179.137:81/threejs/belt">查看</a>
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/belt/belt.png"
         frameborder="0"
@@ -297,8 +302,9 @@
         生长
         <a class="look" href="http://182.43.179.137:81/threejs/grow">查看</a>
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/grow/grow.png"
         frameborder="0"
@@ -312,8 +318,9 @@
           >查看</a
         >
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/gradient/gradient.png"
         frameborder="0"
@@ -324,8 +331,9 @@
         飞线
         <a class="look" href="http://182.43.179.137:81/threejs/fly">查看</a>
       </p>
-      <p class="tick">预览图</p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
       <img
+        v-if="startLoadPreview"
         class="preview"
         src="http://182.43.179.137:81/threejs/fly/fly.png"
         frameborder="0"
@@ -340,12 +348,16 @@ export default {
     return {
       num: 0,
       showNum: 0,
+      startLoadPreview: false,
     };
   },
   created() {
     //this.start();
     this.showNum = 5;
     window.addEventListener("message", this.postMessage);
+    setTimeout(() => {
+      this.startLoadPreview = true;
+    }, 5000);
   },
   methods: {
     start() {
