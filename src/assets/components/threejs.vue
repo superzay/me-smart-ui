@@ -8,6 +8,10 @@
       ES 3.0编程指南 第2版、3D游戏与计算机图形学中的数学方法 第3版。
       <br />
       <br />
+      <span class="themeColor tip"
+        >demo较多，所以限制了部分demo的演示，只贴了预览图，可单独点击demo查看</span
+      >
+      <br />
       <div class="list">
         <div class="left">
           ● 物理引擎
@@ -51,7 +55,7 @@
           <br />
         </div>
         <div class="right">
-          ● 课堂助手 (圆锥曲线)<a
+          ● 课堂助手(圆锥曲线)<a
             class="look"
             href="http://182.43.179.137:81/threejs/math/boneCurve/"
             >查看</a
@@ -108,10 +112,7 @@
     <div class="item">
       <p>
         物理引擎
-
-        <span style="font-size: 12px"
-          >&nbsp;&nbsp;demo较多，gpu会有些卡顿，移动端限制了数量，pc端可以查看全部demo</span
-        >
+        <a class="look" href="http://182.43.179.137:81/threejs/engine">查看</a>
       </p>
       <iframe
         v-if="num >= 0"
@@ -120,117 +121,215 @@
       ></iframe>
     </div>
     <div class="item walk">
-      <p>自由行走（点击地面行走）</p>
+      <p>
+        自由行走（点击地面行走）
+        <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
+      </p>
       <iframe
         v-if="num >= 1"
         src="http://182.43.179.137:81/threejs/walk"
         frameborder="0"
       ></iframe>
+      <p v-if="num < 1" class="tick">预览图</p>
+      <img
+        v-if="num < 1"
+        class="preview"
+        src="http://182.43.179.137:81/threejs/walk/walk.png"
+        frameborder="0"
+      />
     </div>
     <div class="item">
-      <p>色彩流淌</p>
+      <p>
+        色彩流淌
+        <a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
+      </p>
       <iframe
         v-if="num >= 2"
         src="http://182.43.179.137:81/threejs/flow"
         frameborder="0"
       ></iframe>
+      <p v-if="num < 2" class="tick">预览图</p>
+      <img
+        v-if="num < 2"
+        class="preview"
+        src="http://182.43.179.137:81/threejs/flow/flow.png"
+        frameborder="0"
+      />
     </div>
     <div class="item">
-      <p>雷达扫描</p>
+      <p>
+        雷达扫描
+        <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
+      </p>
       <iframe
         v-if="num >= 3"
         src="http://182.43.179.137:81/threejs/radar"
         frameborder="0"
       ></iframe>
+      <p v-if="num < 3" class="tick">预览图</p>
+      <img
+        v-if="num < 3"
+        class="preview"
+        src="http://182.43.179.137:81/threejs/radar/radar.png"
+        frameborder="0"
+      />
     </div>
     <div class="item">
-      <p>透明光幕</p>
+      <p>
+        透明光幕
+        <a class="look" href="http://182.43.179.137:81/threejs/wall">查看</a>
+      </p>
       <iframe
         v-if="num >= 4"
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
+      <p v-if="num < 4" class="tick">预览图</p>
+      <img
+        v-if="num < 4"
+        class="preview"
+        src="http://182.43.179.137:81/threejs/wall/wall.png"
+        frameborder="0"
+      />
     </div>
     <div class="item">
-      <p>3D中国地图</p>
+      <p>
+        3D中国地图
+        <a class="look" href="http://182.43.179.137:81/threejs/chinaMap"
+          >查看</a
+        >
+      </p>
       <iframe
         v-if="num >= 5"
         src="http://182.43.179.137:81/threejs/chinaMap"
         frameborder="0"
       ></iframe>
+      <p v-if="num < 5" class="tick">预览图</p>
+      <img
+        v-if="num < 5"
+        class="preview"
+        src="http://182.43.179.137:81/threejs/chinaMap/chinaMap.png"
+        frameborder="0"
+      />
     </div>
     <div class="item">
-      <p>粒子系统（星空）</p>
+      <p>
+        粒子系统（星空）
+        <a class="look" href="http://182.43.179.137:81/threejs/star">查看</a>
+      </p>
       <iframe
         v-if="num >= 6"
         src="http://182.43.179.137:81/threejs/star"
         frameborder="0"
       ></iframe>
+      <p v-if="num < 6" class="tick">预览图</p>
+      <img
+        v-if="num < 6"
+        class="preview"
+        src="http://182.43.179.137:81/threejs/star/star.png"
+        frameborder="0"
+      />
     </div>
     <div class="item">
-      <p>粒子系统（烟雾）</p>
-      <iframe
-        v-if="num >= 7"
-        src="http://182.43.179.137:81/threejs/smoke"
+      <p>
+        粒子系统（烟雾）
+        <a class="look" href="http://182.43.179.137:81/threejs/smoke/">查看</a>
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/smoke/smoke.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
     <div class="item">
-      <p>课堂助手（圆锥曲线3D图解）</p>
-      <iframe
-        v-if="num >= 8"
-        src="http://182.43.179.137:81/threejs/math/boneCurve"
+      <p>
+        课堂助手（圆锥曲线3D图解）
+        <a class="look" href="http://182.43.179.137:81/threejs/math/boneCurve"
+          >查看</a
+        >
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/math/boneCurve/boneCurve.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
     <div class="item">
-      <p>360º实景</p>
-      <iframe
-        v-if="num >= 9"
-        src="http://182.43.179.137:81/threejs/scenery"
+      <p>
+        360º实景
+        <a class="look" href="http://182.43.179.137:81/threejs/scenery">查看</a>
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/scenery/scenery.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
     <div class="item">
-      <p>骨骼系统</p>
-      <iframe
-        v-if="num >= 10"
-        src="http://182.43.179.137:81/threejs/bone"
+      <p>
+        骨骼系统
+        <a class="look" href="http://182.43.179.137:81/threejs/bone">查看</a>
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/bone/bone.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
     <div class="item">
-      <p>流动</p>
-      <iframe
-        v-if="num >= 11"
-        src="http://182.43.179.137:81/threejs/belt"
+      <p>
+        流动
+        <a class="look" href="http://182.43.179.137:81/threejs/belt">查看</a>
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/belt/belt.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
     <div class="item">
-      <p>生长</p>
-      <iframe
-        v-if="num >= 12"
-        src="http://182.43.179.137:81/threejs/grow"
+      <p>
+        生长
+        <a class="look" href="http://182.43.179.137:81/threejs/grow">查看</a>
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/grow/grow.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
 
     <div class="item">
-      <p>渐变</p>
-      <iframe
-        v-if="num >= 13"
-        src="http://182.43.179.137:81/threejs/gradient"
+      <p>
+        渐变
+        <a class="look" href="http://182.43.179.137:81/threejs/gradient"
+          >查看</a
+        >
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/gradient/gradient.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
     <div class="item">
-      <p>飞线</p>
-      <iframe
-        v-if="num >= 14"
-        src="http://182.43.179.137:81/threejs/fly"
+      <p>
+        飞线
+        <a class="look" href="http://182.43.179.137:81/threejs/fly">查看</a>
+      </p>
+      <p class="tick">预览图</p>
+      <img
+        class="preview"
+        src="http://182.43.179.137:81/threejs/fly/fly.png"
         frameborder="0"
-      ></iframe>
+      />
     </div>
   </div>
 </template>
@@ -245,7 +344,7 @@ export default {
   },
   created() {
     //this.start();
-    this.showNum = window.innerWidth < 1200 ? 7 : 11;
+    this.showNum = 5;
     window.addEventListener("message", this.postMessage);
   },
   methods: {
@@ -274,11 +373,23 @@ export default {
 .threejs {
   min-height: 3000px;
   padding-bottom: 50px;
+  .themeColor {
+    color: $themeColor;
+  }
+  .look {
+    transform: scale(0.7);
+    display: inline-block;
+    color: #27b1a8;
+  }
   .introduce {
     // padding-left: 15px;
     color: #999;
     font-size: 12px;
     margin-top: 10px;
+    .tip {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
     .list {
       display: flex;
       align-items: stretch;
@@ -292,13 +403,9 @@ export default {
     .address {
       font-weight: bold;
     }
-    .look {
-      transform: scale(0.7);
-      display: inline-block;
-      color: #27b1a8;
-    }
   }
   .item {
+    position: relative;
     margin: 20px 10px 10px 0;
     float: left;
     width: calc((100vw - 240px) / 2);
@@ -306,8 +413,23 @@ export default {
     p {
       padding: 10px;
       color: #27b1a8;
+      a {
+        position: relative;
+        top: 2px;
+      }
     }
-    iframe {
+    .tick {
+      position: absolute;
+      opacity: 0.5;
+      top: 40px;
+      left: 10px;
+      font-size: 12px;
+    }
+    .preview {
+      background: #fff;
+    }
+    iframe,
+    .preview {
       width: 100%;
       height: calc(100% - 20px);
     }
@@ -320,7 +442,8 @@ export default {
     .item {
       width: calc(100vw - 60px);
       height: calc((100vw - 60px) / 1.5);
-      iframe {
+      iframe,
+      .preview {
         width: 100%;
         height: calc(100% - 20px);
       }
