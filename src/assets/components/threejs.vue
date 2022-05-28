@@ -18,6 +18,10 @@
           ● 自由行走
           <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
           <br />
+          ● 色彩流淌<a class="look" href="http://182.43.179.137:81/threejs/flow"
+            >查看</a
+          >
+          <br />
           ● 雷达扫描
           <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
           <br />
@@ -45,14 +49,14 @@
             >查看</a
           >
           <br />
+        </div>
+        <div class="right">
           ● 课堂助手 (圆锥曲线)<a
             class="look"
             href="http://182.43.179.137:81/threejs/math/boneCurve/"
             >查看</a
           >
           <br />
-        </div>
-        <div class="right">
           ● 360º实景&nbsp;<a
             class="look"
             href="http://182.43.179.137:81/threejs/scenery"
@@ -124,9 +128,17 @@
       ></iframe>
     </div>
     <div class="item">
-      <p>雷达扫描</p>
+      <p>色彩流淌</p>
       <iframe
         v-if="num >= 2"
+        src="http://182.43.179.137:81/threejs/flow"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="item">
+      <p>雷达扫描</p>
+      <iframe
+        v-if="num >= 3"
         src="http://182.43.179.137:81/threejs/radar"
         frameborder="0"
       ></iframe>
@@ -134,7 +146,7 @@
     <div class="item">
       <p>透明光幕</p>
       <iframe
-        v-if="num >= 3"
+        v-if="num >= 4"
         src="http://182.43.179.137:81/threejs/wall"
         frameborder="0"
       ></iframe>
@@ -142,7 +154,7 @@
     <div class="item">
       <p>3D中国地图</p>
       <iframe
-        v-if="num >= 4"
+        v-if="num >= 5"
         src="http://182.43.179.137:81/threejs/chinaMap"
         frameborder="0"
       ></iframe>
@@ -150,7 +162,7 @@
     <div class="item">
       <p>粒子系统（星空）</p>
       <iframe
-        v-if="num >= 5"
+        v-if="num >= 6"
         src="http://182.43.179.137:81/threejs/star"
         frameborder="0"
       ></iframe>
@@ -158,7 +170,7 @@
     <div class="item">
       <p>粒子系统（烟雾）</p>
       <iframe
-        v-if="num >= 6"
+        v-if="num >= 7"
         src="http://182.43.179.137:81/threejs/smoke"
         frameborder="0"
       ></iframe>
@@ -166,7 +178,7 @@
     <div class="item">
       <p>课堂助手（圆锥曲线3D图解）</p>
       <iframe
-        v-if="num >= 7"
+        v-if="num >= 8"
         src="http://182.43.179.137:81/threejs/math/boneCurve"
         frameborder="0"
       ></iframe>
@@ -174,7 +186,7 @@
     <div class="item">
       <p>360º实景</p>
       <iframe
-        v-if="num >= 8"
+        v-if="num >= 9"
         src="http://182.43.179.137:81/threejs/scenery"
         frameborder="0"
       ></iframe>
@@ -182,7 +194,7 @@
     <div class="item">
       <p>骨骼系统</p>
       <iframe
-        v-if="num >= 9"
+        v-if="num >= 10"
         src="http://182.43.179.137:81/threejs/bone"
         frameborder="0"
       ></iframe>
@@ -190,7 +202,7 @@
     <div class="item">
       <p>流动</p>
       <iframe
-        v-if="num >= 10"
+        v-if="num >= 11"
         src="http://182.43.179.137:81/threejs/belt"
         frameborder="0"
       ></iframe>
@@ -198,7 +210,7 @@
     <div class="item">
       <p>生长</p>
       <iframe
-        v-if="num >= 11"
+        v-if="num >= 12"
         src="http://182.43.179.137:81/threejs/grow"
         frameborder="0"
       ></iframe>
@@ -207,7 +219,7 @@
     <div class="item">
       <p>渐变</p>
       <iframe
-        v-if="num >= 12"
+        v-if="num >= 13"
         src="http://182.43.179.137:81/threejs/gradient"
         frameborder="0"
       ></iframe>
@@ -215,7 +227,7 @@
     <div class="item">
       <p>飞线</p>
       <iframe
-        v-if="num >= 13"
+        v-if="num >= 14"
         src="http://182.43.179.137:81/threejs/fly"
         frameborder="0"
       ></iframe>
