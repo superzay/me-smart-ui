@@ -357,7 +357,7 @@ export default {
     window.addEventListener("message", this.postMessage);
     setTimeout(() => {
       this.startLoadPreview = true;
-    }, 5000);
+    }, 3000);
   },
   methods: {
     start() {
