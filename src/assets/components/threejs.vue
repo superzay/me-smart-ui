@@ -8,10 +8,6 @@
       ES 3.0编程指南 第2版、3D游戏与计算机图形学中的数学方法 第3版。
       <br />
       <br />
-      <span class="themeColor tip"
-        >demo较多，所以限制了部分demo的演示，只贴了预览图，可单独点击demo查看</span
-      >
-      <br />
       <div class="list">
         <div class="left">
           ● 物理引擎
