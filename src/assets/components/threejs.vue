@@ -391,6 +391,7 @@ export default {
           script.type = "module";
           script.src =
             "https://cdn.skypack.dev/three@v0.129.0/examples//jsm/loaders/FBXLoader.js";
+          document.body.appendChild(script);
         }, 12000);
       }
     },
