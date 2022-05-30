@@ -354,25 +354,6 @@ export default {
     setTimeout(() => {
       this.startLoadPreview = true;
     }, 2500);
-    setTimeout(() => {
-      let script1 = document.createElement("script");
-      script1.type = "module";
-
-      script1.src = "https://cdn.skypack.dev/three@v0.129.0";
-      document.body.appendChild(script1);
-      let script2 = document.createElement("script");
-      script2.type = "module";
-      script2.src =
-        "https://cdn.skypack.dev/three@v0.129.0/examples/jsm/controls/OrbitControls.js";
-      document.body.appendChild(script2);
-      let script3 = document.createElement("script");
-      script3.type = "module";
-      script3.src =
-        "https://cdn.skypack.dev/three@v0.129.0/examples//jsm/loaders/GLTFLoader.js";
-      document.body.appendChild(script3);
-
-      console.log(123);
-    }, 6000);
   },
   methods: {
     start() {
@@ -385,6 +366,28 @@ export default {
     postMessage(event) {
       if (event.data == "engineOver") {
         this.start();
+      }
+
+      // 提前加载脚本
+      if (event.data == "loaded") {
+        console.log(12, "loaded");
+        setTimeout(() => {
+          let script1 = document.createElement("script");
+          script1.type = "module";
+
+          script1.src = "https://cdn.skypack.dev/three@v0.129.0";
+          document.body.appendChild(script1);
+          let script2 = document.createElement("script");
+          script2.type = "module";
+          script2.src =
+            "https://cdn.skypack.dev/three@v0.129.0/examples/jsm/controls/OrbitControls.js";
+          document.body.appendChild(script2);
+          let script3 = document.createElement("script");
+          script3.type = "module";
+          script3.src =
+            "https://cdn.skypack.dev/three@v0.129.0/examples//jsm/loaders/GLTFLoader.js";
+          document.body.appendChild(script3);
+        }, 4000);
       }
     },
   },
