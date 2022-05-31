@@ -18,7 +18,7 @@
           ● 自由行走
           <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
           <br />
-          ● 色彩流淌<a class="look" href="http://182.43.179.137:81/threejs/flow"
+          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow"
             >查看</a
           >
           <br />
@@ -107,7 +107,7 @@
 
     <div class="item">
       <p>
-        物理引擎
+        物理引擎（碰撞检测）
         <a class="look" href="http://182.43.179.137:81/threejs/engine">查看</a>
       </p>
       <iframe
@@ -136,7 +136,7 @@
     </div>
     <div class="item">
       <p>
-        色彩流淌
+        色彩流动
         <a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
       </p>
       <iframe
