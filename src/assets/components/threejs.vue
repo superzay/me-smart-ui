@@ -105,7 +105,7 @@
       >
     </div>
 
-    <div class="item">
+    <div class="item engine">
       <p>
         物理引擎（碰撞检测）
         <a class="look" href="http://182.43.179.137:81/threejs/engine">查看</a>
@@ -407,7 +407,12 @@ export default {
 
 .threejs {
   min-height: 3000px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
   .themeColor {
     color: $themeColor;
   }
@@ -441,7 +446,7 @@ export default {
   }
   .item {
     position: relative;
-    margin: 20px 10px 10px 0;
+    margin: 20px 10px 0px 0;
     float: left;
     width: calc((100vw - 240px) / 2);
     height: calc((100vw - 240px) / 2 / 1.5);
@@ -466,7 +471,7 @@ export default {
     iframe,
     .preview {
       width: 100%;
-      height: calc(100% - 20px);
+      height: calc(100% - 40px);
     }
   }
 
@@ -477,14 +482,18 @@ export default {
     .item {
       width: calc(100vw - 60px);
       height: calc((100vw - 60px) / 1.5);
+      margin: 10px 0 0 0;
+      > p:first-child {
+        padding-left: 5px;
+      }
       iframe,
       .preview {
         width: 100%;
-        height: calc(100% - 20px);
+        height: calc(100% - 40px);
       }
-    }
-    .walk {
-      margin-top: 40px;
+      &.engine {
+        margin-top: 20px;
+      }
     }
   }
 }
