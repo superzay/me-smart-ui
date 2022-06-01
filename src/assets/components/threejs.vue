@@ -482,7 +482,7 @@ export default {
     .item {
       width: calc(100vw - 60px);
       height: calc((100vw - 60px) / 1.5);
-      margin: 10px 0 0 0;
+      margin: 15px 0 0 0;
       > p:first-child {
         padding-left: 5px;
       }
