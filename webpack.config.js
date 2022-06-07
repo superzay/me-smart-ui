@@ -14,7 +14,7 @@ const moveDirPlugin = require('./extra/webpack/plugin/moveDirPlugin');
 const getEntry = function () {
   if (process.env.run === 'build-package') {
     return {
-      main: ['./src/package/index.js']
+      index: ['./src/package/index.js']
     };
   } else if (['dev', 'build-main'].includes(process.env.run)) {
     return './src/main.js';
@@ -46,8 +46,8 @@ const getOutput = function () {
 
 const plugins = [
   new MiniCssExtractPlugin({
-    filename: "css/[name].css",
-    chunkFilename: "css/vue-[name]-[hash].css"
+    filename: "css/[name]-[hash].css", // 入口模块chunk中分离出来的css文件的命名规则
+    chunkFilename: "css/vue-[name]-[hash].css" // 非入口模块chunk中分离出来的css文件的命名规则
   }),
   new VueLoaderPlugin(),
   new moduleLoaderPlugin(),
@@ -148,7 +148,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10,
-          name: 'images/[hash].[ext]'
+          name: 'images/[name]-[hash].[ext]'
         }
       }]
     }, {

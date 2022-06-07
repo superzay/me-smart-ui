@@ -1,5 +1,5 @@
 <template>
-  <div class="threejs">
+  <div class="threejs1">
     <div class="introduce">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对于这里的内容，需要你先去了解基础的webgl知识，了解矩阵、向量、透视投影、裁剪空间、视图变换、着色器原理、threejs框架等等内容。
       <br />
@@ -405,7 +405,7 @@ export default {
 <style lang='scss' scoped>
 @import "src/assets/css/var.scss";
 
-.threejs {
+.threejs1 {
   min-height: 3000px;
   padding-bottom: 20px;
   &::after {
