@@ -11,98 +11,49 @@
       <div class="list">
         <div class="left">
           ● 物理引擎
-          <a class="look" href="http://182.43.179.137:81/threejs/engine"
-            >查看
-          </a>
+          <a class="look" href="http://182.43.179.137:81/threejs/engine">查看 </a>
           <br />
           ● 自由行走
           <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
           <br />
-          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow"
-            >查看</a
-          >
+          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
           <br />
           ● 雷达扫描
           <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
           <br />
-          ● 透明光幕&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/wall"
-            >查看</a
-          >
+          ● 透明光幕&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/wall">查看</a>
           <br />
-          ● 3D中国地图&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/map"
-            >查看</a
-          >
+          ● 3D中国地图&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/map">查看</a>
           <br />
-          ● 粒子系统 (星空)<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/star"
-            >查看</a
-          >
+          ● 粒子系统 (星空)<a class="look" href="http://182.43.179.137:81/threejs/star">查看</a>
           <br />
-          ● 粒子系统 (烟雾)<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/smoke"
-            >查看</a
-          >
+          ● 粒子系统 (烟雾)<a class="look" href="http://182.43.179.137:81/threejs/smoke">查看</a>
+          <br />
+          ● 3D图表<a class="look" href="http://182.43.179.137:81/threejs/charts/pie/">查看</a>
           <br />
         </div>
         <div class="right">
-          ● 课堂助手(圆锥曲线)<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/math/boneCurve/"
-            >查看</a
-          >
+          ● 课堂助手(圆锥曲线)<a class="look" href="http://182.43.179.137:81/threejs/math/boneCurve/">查看</a>
           <br />
-          ● 360º实景&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/scenery"
-            >查看</a
-          >
+          ● 360º实景&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/scenery">查看</a>
           <br />
-          ● 骨骼系统&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/bone"
-            >查看</a
-          >
+          ● 骨骼系统&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/bone">查看</a>
           <br />
 
-          ● 流动&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/belt"
-            >查看</a
-          >
+          ● 流动&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/belt">查看</a>
           <br />
-          ● 生长&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/grow"
-            >查看</a
-          >
+          ● 生长&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/grow">查看</a>
           <br />
-          ● 渐变&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/gradient "
-            >查看
-          </a>
+          ● 渐变&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/gradient ">查看 </a>
           <br />
-          ● 飞线&nbsp;<a
-            class="look"
-            href="http://182.43.179.137:81/threejs/fly"
-            >查看</a
-          >
+          ● 飞线&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/fly">查看</a>
           <br />
         </div>
       </div>
 
       <br />
 
-      <span class="address">仓库地址：</span
-      ><a href="https://gitee.com/superzay/threejs-animate"
-        >https://gitee.com/superzay/threejs-animate</a
-      >
+      <span class="address">仓库地址：</span><a href="https://gitee.com/superzay/threejs-animate">https://gitee.com/superzay/threejs-animate</a>
     </div>
 
     <div class="item engine">
@@ -110,121 +61,61 @@
         物理引擎（碰撞检测）
         <a class="look" href="http://182.43.179.137:81/threejs/engine">查看</a>
       </p>
-      <iframe
-        v-if="num >= 0"
-        src="http://182.43.179.137:81/threejs/engine"
-        frameborder="0"
-      ></iframe>
+      <iframe v-if="num >= 0" src="http://182.43.179.137:81/threejs/engine" frameborder="0"></iframe>
     </div>
     <div class="item walk">
       <p>
         自由行走（点击地面行走）
         <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
       </p>
-      <iframe
-        v-if="num >= 1"
-        src="http://182.43.179.137:81/threejs/walk"
-        frameborder="0"
-      ></iframe>
+      <iframe v-if="num >= 1" src="http://182.43.179.137:81/threejs/walk" frameborder="0"></iframe>
       <p v-if="num < 1 && startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="num < 1 && startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/walk/walk.png"
-        frameborder="0"
-      />
+      <img v-if="num < 1 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/walk/walk.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         色彩流动
         <a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
       </p>
-      <iframe
-        v-if="num >= 2"
-        src="http://182.43.179.137:81/threejs/flow"
-        frameborder="0"
-      ></iframe>
+      <iframe v-if="num >= 2" src="http://182.43.179.137:81/threejs/flow" frameborder="0"></iframe>
       <p v-if="num < 2 && startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="num < 2 && startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/flow/flow.png"
-        frameborder="0"
-      />
+      <img v-if="num < 2 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/flow/flow.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         雷达扫描
         <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
       </p>
-      <iframe
-        v-if="num >= 3"
-        src="http://182.43.179.137:81/threejs/radar"
-        frameborder="0"
-      ></iframe>
+      <iframe v-if="num >= 3" src="http://182.43.179.137:81/threejs/radar" frameborder="0"></iframe>
       <p v-if="num < 3 && startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="num < 3 && startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/radar/radar.png"
-        frameborder="0"
-      />
+      <img v-if="num < 3 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/radar/radar.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         透明光幕
         <a class="look" href="http://182.43.179.137:81/threejs/wall">查看</a>
       </p>
-      <iframe
-        v-if="num >= 4"
-        src="http://182.43.179.137:81/threejs/wall"
-        frameborder="0"
-      ></iframe>
+      <iframe v-if="num >= 4" src="http://182.43.179.137:81/threejs/wall" frameborder="0"></iframe>
       <p v-if="num < 4 && startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="num < 4 && startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/wall/wall.png"
-        frameborder="0"
-      />
+      <img v-if="num < 4 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/wall/wall.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         3D中国地图
-        <a class="look" href="http://182.43.179.137:81/threejs/chinaMap"
-          >查看</a
-        >
+        <a class="look" href="http://182.43.179.137:81/threejs/chinaMap">查看</a>
       </p>
-      <iframe
-        v-if="num >= 5"
-        src="http://182.43.179.137:81/threejs/chinaMap"
-        frameborder="0"
-      ></iframe>
+      <iframe v-if="num >= 5" src="http://182.43.179.137:81/threejs/chinaMap" frameborder="0"></iframe>
       <p v-if="num < 5 && startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="num < 5 && startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/chinaMap/chinaMap.png"
-        frameborder="0"
-      />
+      <img v-if="num < 5 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/chinaMap/chinaMap.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         粒子系统（星空）
         <a class="look" href="http://182.43.179.137:81/threejs/star">查看</a>
       </p>
-      <iframe
-        v-if="num >= 6"
-        src="http://182.43.179.137:81/threejs/star"
-        frameborder="0"
-      ></iframe>
+      <iframe v-if="num >= 6" src="http://182.43.179.137:81/threejs/star" frameborder="0"></iframe>
       <p v-if="num < 6 && startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="num < 6 && startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/star/star.png"
-        frameborder="0"
-      />
+      <img v-if="num < 6 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/star/star.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -232,27 +123,23 @@
         <a class="look" href="http://182.43.179.137:81/threejs/smoke/">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/smoke/smoke.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/smoke/smoke.png" frameborder="0" />
+    </div>
+    <div class="item">
+      <p>
+        3D图表
+        <a class="look" href="http://182.43.179.137:81/threejs/charts/pie">查看</a>
+      </p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/charts/pie/pie.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         课堂助手（圆锥曲线3D图解）
-        <a class="look" href="http://182.43.179.137:81/threejs/math/boneCurve"
-          >查看</a
-        >
+        <a class="look" href="http://182.43.179.137:81/threejs/math/boneCurve">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/math/boneCurve/boneCurve.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/math/boneCurve/boneCurve.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -260,12 +147,7 @@
         <a class="look" href="http://182.43.179.137:81/threejs/scenery">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/scenery/scenery.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/scenery/scenery.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -273,12 +155,7 @@
         <a class="look" href="http://182.43.179.137:81/threejs/bone">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/bone/bone.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/bone/bone.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -286,12 +163,7 @@
         <a class="look" href="http://182.43.179.137:81/threejs/belt">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/belt/belt.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/belt/belt.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -299,28 +171,16 @@
         <a class="look" href="http://182.43.179.137:81/threejs/grow">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/grow/grow.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/grow/grow.png" frameborder="0" />
     </div>
 
     <div class="item">
       <p>
         渐变
-        <a class="look" href="http://182.43.179.137:81/threejs/gradient"
-          >查看</a
-        >
+        <a class="look" href="http://182.43.179.137:81/threejs/gradient">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/gradient/gradient.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/gradient/gradient.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -328,12 +188,7 @@
         <a class="look" href="http://182.43.179.137:81/threejs/fly">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img
-        v-if="startLoadPreview"
-        class="preview"
-        src="http://182.43.179.137:81/threejs/fly/fly.png"
-        frameborder="0"
-      />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/fly/fly.png" frameborder="0" />
     </div>
   </div>
 </template>
@@ -377,20 +232,17 @@ export default {
           document.body.appendChild(script1);
           let script2 = document.createElement("script");
           script2.type = "module";
-          script2.src =
-            "https://cdn.skypack.dev/three@v0.129.0/examples/jsm/controls/OrbitControls.js";
+          script2.src = "https://cdn.skypack.dev/three@v0.129.0/examples/jsm/controls/OrbitControls.js";
           document.body.appendChild(script2);
           let script3 = document.createElement("script");
           script3.type = "module";
-          script3.src =
-            "https://cdn.skypack.dev/three@v0.129.0/examples//jsm/loaders/GLTFLoader.js";
+          script3.src = "https://cdn.skypack.dev/three@v0.129.0/examples//jsm/loaders/GLTFLoader.js";
           document.body.appendChild(script3);
         }, 4000);
         setTimeout(() => {
           let script = document.createElement("script");
           script.type = "module";
-          script.src =
-            "https://cdn.skypack.dev/three@v0.129.0/examples//jsm/loaders/FBXLoader.js";
+          script.src = "https://cdn.skypack.dev/three@v0.129.0/examples//jsm/loaders/FBXLoader.js";
           document.body.appendChild(script);
         }, 12000);
       }
@@ -402,7 +254,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import "src/assets/css/var.scss";
 
 .threejs1 {
