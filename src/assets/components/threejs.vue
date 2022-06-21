@@ -16,7 +16,7 @@
           ● 自由行走
           <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
           <br />
-          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
+          ● 3D图表<a class="look" href="http://182.43.179.137:81/threejs/charts/pie/">查看</a>
           <br />
           ● 雷达扫描
           <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
@@ -29,7 +29,7 @@
           <br />
           ● 粒子系统 (烟雾)<a class="look" href="http://182.43.179.137:81/threejs/smoke">查看</a>
           <br />
-          ● 3D图表<a class="look" href="http://182.43.179.137:81/threejs/charts/pie/">查看</a>
+          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
           <br />
         </div>
         <div class="right">
@@ -74,12 +74,12 @@
     </div>
     <div class="item">
       <p>
-        色彩流动
-        <a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
+        3D图表
+        <a class="look" href="http://182.43.179.137:81/threejs/charts/pie">查看</a>
       </p>
-      <iframe v-if="num >= 2" src="http://182.43.179.137:81/threejs/flow" frameborder="0"></iframe>
+      <iframe v-if="num >= 2" src="http://182.43.179.137:81/threejs/charts/pie" frameborder="0"></iframe>
       <p v-if="num < 2 && startLoadPreview" class="tick">预览图</p>
-      <img v-if="num < 2 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/flow/flow.png" frameborder="0" />
+      <img v-if="num < 2 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/charts/pie/pie.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -127,12 +127,13 @@
     </div>
     <div class="item">
       <p>
-        3D图表
-        <a class="look" href="http://182.43.179.137:81/threejs/charts/pie">查看</a>
+        色彩流动
+        <a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
-      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/charts/pie/pie.png" frameborder="0" />
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/flow/flow.png" frameborder="0" />
     </div>
+
     <div class="item">
       <p>
         课堂助手（圆锥曲线3D图解）
