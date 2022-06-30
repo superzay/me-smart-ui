@@ -16,6 +16,9 @@
           ● 自由行走
           <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
           <br />
+          ● 抖音挤地铁小游戏
+          <a class="look" href="http://182.43.179.137:81/threejs/train">查看</a>
+          <br />
           ● 3D图表<a class="look" href="http://182.43.179.137:81/threejs/charts/pie/">查看</a>
           <br />
           ● 雷达扫描
@@ -29,10 +32,10 @@
           <br />
           ● 粒子系统 (烟雾)<a class="look" href="http://182.43.179.137:81/threejs/smoke">查看</a>
           <br />
-          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
-          <br />
         </div>
         <div class="right">
+          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
+          <br />
           ● 课堂助手(圆锥曲线)<a class="look" href="http://182.43.179.137:81/threejs/math/boneCurve/">查看</a>
           <br />
           ● 360º实景&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/scenery">查看</a>
@@ -68,54 +71,57 @@
         自由行走（点击地面行走）
         <a class="look" href="http://182.43.179.137:81/threejs/walk">查看</a>
       </p>
-      <iframe v-if="num >= 1" src="http://182.43.179.137:81/threejs/walk" frameborder="0"></iframe>
+      <iframe v-if="num >= 1" src="http://182.43.179.137:81/threejs/walk/" frameborder="0"></iframe>
       <p v-if="num < 1 && startLoadPreview" class="tick">预览图</p>
       <img v-if="num < 1 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/walk/walk.png" frameborder="0" />
+    </div>
+    <div class="item train">
+      <p>
+        抖音挤地铁小游戏
+        <a class="look" href="http://182.43.179.137:81/threejs/train/">查看</a>
+      </p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/train/train.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         3D图表
         <a class="look" href="http://182.43.179.137:81/threejs/charts/pie">查看</a>
       </p>
-      <iframe v-if="num >= 2" src="http://182.43.179.137:81/threejs/charts/pie" frameborder="0"></iframe>
-      <p v-if="num < 2 && startLoadPreview" class="tick">预览图</p>
-      <img v-if="num < 2 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/charts/pie/pie.png" frameborder="0" />
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/charts/pie/pie.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         雷达扫描
         <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
       </p>
-      <iframe v-if="num >= 3" src="http://182.43.179.137:81/threejs/radar" frameborder="0"></iframe>
-      <p v-if="num < 3 && startLoadPreview" class="tick">预览图</p>
-      <img v-if="num < 3 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/radar/radar.png" frameborder="0" />
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/radar/radar.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         透明光幕
         <a class="look" href="http://182.43.179.137:81/threejs/wall">查看</a>
       </p>
-      <iframe v-if="num >= 4" src="http://182.43.179.137:81/threejs/wall" frameborder="0"></iframe>
-      <p v-if="num < 4 && startLoadPreview" class="tick">预览图</p>
-      <img v-if="num < 4 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/wall/wall.png" frameborder="0" />
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/wall/wall.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         3D中国地图
         <a class="look" href="http://182.43.179.137:81/threejs/chinaMap">查看</a>
       </p>
-      <iframe v-if="num >= 5" src="http://182.43.179.137:81/threejs/chinaMap" frameborder="0"></iframe>
-      <p v-if="num < 5 && startLoadPreview" class="tick">预览图</p>
-      <img v-if="num < 5 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/chinaMap/chinaMap.png" frameborder="0" />
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/chinaMap/chinaMap.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
         粒子系统（星空）
         <a class="look" href="http://182.43.179.137:81/threejs/star">查看</a>
       </p>
-      <iframe v-if="num >= 6" src="http://182.43.179.137:81/threejs/star" frameborder="0"></iframe>
-      <p v-if="num < 6 && startLoadPreview" class="tick">预览图</p>
-      <img v-if="num < 6 && startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/star/star.png" frameborder="0" />
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/star/star.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
@@ -205,7 +211,7 @@ export default {
   },
   created() {
     //this.start();
-    this.showNum = 4;
+    this.showNum = 1;
     window.addEventListener("message", this.postMessage);
     setTimeout(() => {
       this.startLoadPreview = true;
@@ -217,7 +223,7 @@ export default {
       this.num++;
       setTimeout(() => {
         this.start();
-      }, 3000);
+      }, 6000);
     },
     postMessage(event) {
       if (event.data == "engineOver") {
