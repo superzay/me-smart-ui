@@ -23,6 +23,8 @@
           <br />
           ● 星云<a class="look" href="http://182.43.179.137:81/threejs/startCloud/">查看</a>
           <br />
+          ● 蓝天白云<a class="look" href="http://182.43.179.137:81/threejs/startCloud/">查看</a>
+          <br />
           ● 雷达扫描
           <a class="look" href="http://182.43.179.137:81/threejs/radar">查看</a>
           <br />
@@ -32,13 +34,14 @@
           <br />
           ● 粒子系统 (星空)<a class="look" href="http://182.43.179.137:81/threejs/star">查看</a>
           <br />
+        </div>
+
+        <div class="right">
           ● 粒子系统 (烟雾)<a class="look" href="http://182.43.179.137:81/threejs/smoke">查看</a>
           <br />
-        </div>
-        <div class="right">
-          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
-          <br />
           ● 课堂助手(圆锥曲线)<a class="look" href="http://182.43.179.137:81/threejs/math/boneCurve/">查看</a>
+          <br />
+          ● 色彩流动<a class="look" href="http://182.43.179.137:81/threejs/flow">查看</a>
           <br />
           ● 360º实景&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/scenery">查看</a>
           <br />
@@ -100,6 +103,14 @@
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
       <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/startCloud/startCloud.png" frameborder="0" />
+    </div>
+    <div class="item">
+      <p>
+        蓝天白云
+        <a class="look" href="http://182.43.179.137:81/threejs/cloud">查看</a>
+      </p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/cloud/cloud.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
