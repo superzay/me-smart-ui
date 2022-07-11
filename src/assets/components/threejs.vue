@@ -56,6 +56,8 @@
           <br />
           ● 飞线&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/fly">查看</a>
           <br />
+          ● 管道流动&nbsp;<a class="look" href="http://182.43.179.137:81/threejs/pipe">查看</a>
+          <br />
         </div>
       </div>
 
@@ -111,6 +113,14 @@
       </p>
       <p v-if="startLoadPreview" class="tick">预览图</p>
       <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/cloud/cloud.png" frameborder="0" />
+    </div>
+    <div class="item">
+      <p>
+        管道流动
+        <a class="look" href="http://182.43.179.137:81/threejs/pipe">查看</a>
+      </p>
+      <p v-if="startLoadPreview" class="tick">预览图</p>
+      <img v-if="startLoadPreview" class="preview" src="http://182.43.179.137:81/threejs/pipe/pipe.png" frameborder="0" />
     </div>
     <div class="item">
       <p>
