@@ -1,17 +1,12 @@
 <template>
   <div class="demo-me-image-crop">
-    <h2 class="title">
-      me-image-crop图片旋转缩放裁剪组件（文档最后有演示demo）
-    </h2>
+    <h2 class="title">me-image-crop图片旋转缩放裁剪组件（文档最后有演示demo）</h2>
     <p class="explain">
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一款基于“矩阵、旋转变换、三维向量及其叉积”开发的vue图片旋转、缩放、裁剪组件。兼容移动和pc端。包括图片预览/单指拖动/双指缩放/双指旋转/鼠标拖动/鼠标滚轮缩放/鼠标单击旋转和长按旋转/图片裁剪输出等。简单方便，皮实易用，解决项目中的头像设置等问题，采用npm安装使用。
     </p>
     <div class="effect">
       <p>效果演示</p>
-      <img
-        src="http://182.43.179.137:81/public/images/me-smart-ui/2.png"
-        alt=""
-      />
+      <img src="http://120.48.159.112/public/images/me-smart-ui/2.png" alt="" />
     </div>
     <!-- 说明文档 -->
     <doc></doc>
@@ -24,25 +19,14 @@
     <!--选择图片-->
     <div class="slt-img">
       <label>选择要裁剪的图片</label>
-      <input
-        type="file"
-        @change="getFile($event)"
-        accept=".jpg,.png,.bmp,.gif"
-      />
+      <input type="file" @change="getFile($event)" accept=".jpg,.png,.bmp,.gif" />
     </div>
 
     <!--图片裁剪组件，演示demo-->
     <div v-if="openImgCropPopover" class="img-crop">
       <div>
         <!-- me-image-crop已经在main.js和test-lib.js中被注册为全局组件，直接使用 -->
-        <me-image-crop
-          ref="image-crop"
-          @confirm-crop-image="getImg"
-          @cancel-crop-image="cancel"
-          :out-type="outType"
-          :show-btn="showBtn"
-          :image-src="imgSrc"
-        >
+        <me-image-crop ref="image-crop" @confirm-crop-image="getImg" @cancel-crop-image="cancel" :out-type="outType" :show-btn="showBtn" :image-src="imgSrc">
           <!--可传递插槽-->
           <!--<template v-slot:confirm>
               <div style='width:25px;height:25px;background:yellow;border-radius:20px;'>ok</div>

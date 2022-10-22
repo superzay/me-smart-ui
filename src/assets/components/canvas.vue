@@ -13,31 +13,19 @@
       <br />
       <br />
 
-      <span class="address">仓库地址：</span
-      ><a href="https://gitee.com/superzay/canvas-animate"
-        >https://gitee.com/superzay/canvas-animate</a
-      >
+      <span class="address">仓库地址：</span><a href="https://gitee.com/superzay/canvas-animate">https://gitee.com/superzay/canvas-animate</a>
     </p>
     <div class="item firework">
       <p>小烟花</p>
-      <iframe
-        src="http://182.43.179.137:81/canvas/firework.html"
-        frameborder="0"
-      ></iframe>
+      <iframe src="http://120.48.159.112/canvas/firework.html" frameborder="0"></iframe>
     </div>
     <div class="item">
       <p>多彩泡泡（点一点）</p>
-      <iframe
-        src="http://182.43.179.137:81/canvas/bubble.html"
-        frameborder="0"
-      ></iframe>
+      <iframe src="http://120.48.159.112/canvas/bubble.html" frameborder="0"></iframe>
     </div>
     <div class="item chinaMap">
       <p>中国地图</p>
-      <iframe
-        src="http://182.43.179.137:81/canvas/chinaMap.html"
-        frameborder="0"
-      ></iframe>
+      <iframe src="http://120.48.159.112/canvas/chinaMap.html" frameborder="0"></iframe>
     </div>
   </div>
 </template>
@@ -67,7 +55,7 @@ export default {
 };
 </script>
 
-<style lang='scss' scoped>
+<style lang="scss" scoped>
 @import "src/assets/css/var.scss";
 
 .threejs {
